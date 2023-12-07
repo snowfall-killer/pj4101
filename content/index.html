@@ -143,6 +143,22 @@ img.add_border {
         </header>
     <div id="tipue_search_content"> <a href='Solvespace.html'>Next</a> >> Solvespace<br /><h1>Research</h1>
 <p>專題題目： AI 在平面機構設計上的應用</p>
+<p>執行步驟:</p>
+<p style="padding-left: 30px;">了解如何執行 Pyslvs-UI (<a href="https://github.com/pyslvs/Pyslvs-UI">https://github.com/pyslvs/Pyslvs-UI</a>) 套件的 editable 與 exe 編譯</p>
+<p style="padding-left: 60px;">下載 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EcYbwVPaDyRGpwxNWSRtRj4B7u9IzULS7MivyMAggtiNaQ?e=JGq4KB">Pyslvs_portable_development.7z</a> (需要下載密碼)</p>
+<p style="padding-left: 60px;">在 Windows 64 位元操作系統中, 解開上列壓縮檔案後, 以 start.bat 啟動可攜系統</p>
+<p style="padding-left: 60px;">將 <a href="https://pyslvs.github.io/downloads/pydistutils.cfg">pydistutils.cfg</a> 放入 Y:\home 目錄中, 以便後續能利用 mingw32 對 C++ 程式碼進行編譯</p>
+<p style="padding-left: 60px;">將 <a href="./../downloads/win_generate_exe.bat">win_generate_exe.bat</a> 放入 Y:\home\Pyslvs-UI 目錄中, 以便用來建立 .exe 可執行檔案</p>
+<p style="padding-left: 60px;">從 y:\ cd tmp 後, 以 git clone --recurse-submodules <a href="https://github.com/pyslvs/pyslvs.git">https://github.com/pyslvs/pyslvs.git</a> 取下 pyslvs</p>
+<p style="padding-left: 60px;">從 y:\tmp\ cd pyslvs 後, 以 python setup.py build 編譯動態連結程式庫</p>
+<p style="padding-left: 60px;">從 y:\ cd tmp\Pyslvs-UI 之後, 以 pip install -e . 完成 editable 套件安裝</p>
+<p style="padding-left: 60px;">從 y:\ cd tmp\Pyslvs-UI, 以 win_generate_exe.bat 執行後完成 dist 目錄中 .exe 可執行檔案的建立</p>
+<p style="padding-left: 30px;">了解如何啟動 <a href="https://github.com/pyslvs/PMKSWeb">https://github.com/pyslvs/PMKSWeb</a></p>
+<p style="padding-left: 30px;">利用 PMKS plus 的檔案格式, 將 Pyslvs-UI 的機構可以在 <a href="https://app.pmksplus.com/">https://app.pmksplus.com/</a> 中展示</p>
+<p style="padding-left: 30px;">了解 Pyslvs-UI 中的各種合成分析套件</p>
+<p style="padding-left: 30px;">了解何謂強化學習?</p>
+<p style="padding-left: 30px;">了解如何將 AI 套用到 Pyslvs-UI 的機構合成與分析過程中</p>
+<hr/>
 <p>相關軟體：Pyslvs，CoppeliaSim，Leo editor，Python and Mojo language system，Solid Edge</p>
 <p>界定何謂 AI。</p>
 <p>瞭解 Pyslvs 的運作原理及使用方法。</p>
