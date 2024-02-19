@@ -52,6 +52,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./latex/40921.pdf
+          asset_path: ./latex/4101.pdf
           asset_name: 4101.pdf
           asset_content_type: pdf
