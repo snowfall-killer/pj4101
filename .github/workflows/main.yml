@@ -23,9 +23,9 @@ jobs:
       - name: Test LaTeX
         working-directory: ./latex
         run: |
-          xelatex 4101.tex
-          xelatex 4101.tex
-          xelatex 4101.tex
+          xelatex cd_report.tex
+          xelatex cd_report.tex
+          xelatex cd_report.tex
 
       - name: Bump version and push tag
         id: tag_version
