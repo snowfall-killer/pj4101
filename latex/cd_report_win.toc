@@ -1,0 +1,32 @@
+\contentsline {chapter}{摘\nobreakspace {}\nobreakspace {}\nobreakspace {}要}{i}{Doc-Start}%
+\contentsline {chapter}{Abstract}{ii}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}前言}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}設計架構}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}規則說明}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}球員製作過程}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}車體改良-運行}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}車體改良-擊球}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.3}車體改良-背號}{3}{section.2.3}%
+\contentsline {chapter}{\numberline {3}球員程式碼}{4}{chapter.3}%
+\contentsline {section}{\numberline {3.1}車體改良-操作}{4}{section.3.1}%
+\contentsline {section}{\numberline {3.2}移動操作-輪子旋轉}{4}{section.3.2}%
+\contentsline {section}{\numberline {3.3}移動操作-前輪方向}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}移動操作-左右轉向}{5}{section.3.4}%
+\contentsline {section}{\numberline {3.5}移動操作-控制球員移動}{6}{section.3.5}%
+\contentsline {section}{\numberline {3.6}移動操作-維持速度}{7}{section.3.6}%
+\contentsline {section}{\numberline {3.7}球員改良-倒地翻身}{7}{section.3.7}%
+\contentsline {chapter}{\numberline {4}計時器與記分板}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}摘要}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}計時器}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}LED記分板}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}機械式轉盤記分板}{15}{section.4.4}%
+\contentsline {chapter}{\numberline {5}場景模擬}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}摘要}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}機械記分板放入場景}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}統整場景}{19}{section.5.3}%
+\contentsline {chapter}{\numberline {6}遠端連線}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1}摘要}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2}連線說明-防火牆}{20}{section.6.2}%
+\contentsline {section}{\numberline {6.3}連線說明-IPv6}{20}{section.6.3}%
+\contentsline {chapter}{\numberline {7}總結}{23}{chapter.7}%
+\contentsfinish 
