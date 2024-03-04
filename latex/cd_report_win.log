@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.3.14)  29 FEB 2024 23:17
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.3.14)  4 MAR 2024 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./cd_report_win.tex
+**cd_report_win.tex v1
 (cd_report_win.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07>
@@ -838,47 +838,27 @@ Overfull \hbox (168.51225pt too wide) detected at line 88
 
 
 Overfull \hbox (127.03224pt too wide) detected at line 90
-\TU/標楷體(0)/m/n/20.74 班 級：|  四 設 二 甲
+\TU/標楷體(0)/m/n/20.74 班 級：|  四 設 二 乙
  []
 
 
-Overfull \hbox (202.29578pt too wide) detected at line 92
-\TU/標楷體(0)/m/n/20.74 學 生：|  第 一 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+Overfull \hbox (203.06543pt too wide) detected at line 92
+\TU/標楷體(0)/m/n/20.74 學 生：|  陳 岳 檉 \TU/TimesNewRoman(0)/m/n/20.74 (41023218)
  []
 
 
-Overfull \hbox (200.52664pt too wide) detected at line 95
- \TU/標楷體(0)/m/n/20.74 第 二 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+Overfull \hbox (201.2963pt too wide) detected at line 94
+ \TU/標楷體(0)/m/n/20.74 蔡 弦 霖 \TU/TimesNewRoman(0)/m/n/20.74 (41023248)
  []
 
 
-Overfull \hbox (200.52664pt too wide) detected at line 97
- \TU/標楷體(0)/m/n/20.74 第 三 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+Overfull \hbox (201.2963pt too wide) detected at line 96
+ \TU/標楷體(0)/m/n/20.74 鄭 立 揚 \TU/TimesNewRoman(0)/m/n/20.74 (41023251)
  []
 
 
-Overfull \hbox (200.52664pt too wide) detected at line 99
- \TU/標楷體(0)/m/n/20.74 第 四 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
- []
-
-
-Overfull \hbox (200.52664pt too wide) detected at line 101
- \TU/標楷體(0)/m/n/20.74 第 五 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
- []
-
-
-Overfull \hbox (200.52664pt too wide) detected at line 103
- \TU/標楷體(0)/m/n/20.74 第 六 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
- []
-
-
-Overfull \hbox (200.52664pt too wide) detected at line 105
- \TU/標楷體(0)/m/n/20.74 第 七 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
- []
-
-
-Overfull \hbox (200.52664pt too wide) detected at line 107
- \TU/標楷體(0)/m/n/20.74 第 八 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+Overfull \hbox (201.2963pt too wide) detected at line 98
+ \TU/標楷體(0)/m/n/20.74 謝 鴻 元 \TU/TimesNewRoman(0)/m/n/20.74 (41023254)
  []
 
 [1
@@ -1329,7 +1309,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--152
+Underfull \hbox (badness 10000) in paragraph at lines 4--144
 
  []
 
@@ -1344,11 +1324,11 @@ Package rerunfilecheck Info: File `cd_report_win.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  19847 strings out of 411476
- 383924 string characters out of 5820613
- 1856001 words of memory out of 5000000
+ 383922 string characters out of 5820613
+ 1857001 words of memory out of 5000000
  39780 multiletter control sequences out of 15000+600000
  518161 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,6n,84p,790b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,84p,791b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cd_report_win.pdf (31 pages).
