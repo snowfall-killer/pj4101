@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.3.14)  4 MAR 2024 17:04
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.3.14)  4 MAR 2024 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**cd_report_win.tex v1
+**./cd_report_win.tex
 (cd_report_win.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07>
@@ -1324,11 +1324,11 @@ Package rerunfilecheck Info: File `cd_report_win.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  19847 strings out of 411476
- 383922 string characters out of 5820613
+ 383924 string characters out of 5820613
  1857001 words of memory out of 5000000
  39780 multiletter control sequences out of 15000+600000
  518161 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,6n,84p,791b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,84p,790b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cd_report_win.pdf (31 pages).
