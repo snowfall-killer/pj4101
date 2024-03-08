@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.3.14)  4 MAR 2024 19:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.3.14)  29 FEB 2024 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07>
 (y:\miktex-portable\texmfs\install\tex/latex/base\report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
-(y:\miktex-portable\texmfs\install\tex/latex/base\size10.clo
-File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(y:\miktex-portable\texmfs\install\tex/latex/base\size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
 \c@chapter=\count182
@@ -692,10 +692,6 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \diagbox@outsepl=\dimen287
 \diagbox@outsepr=\dimen288
 )
-
-LaTeX Warning: Unused global option(s):
-    [14pt].
-
 (cd_report_win.aux)
 \openout1 = `cd_report_win.aux'.
 
@@ -800,12 +796,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=-14.22636pt
 * \voffset=-22.76219pt
 * \mag=1000
@@ -828,772 +824,278 @@ Underfull \hbox (badness 10000) detected at line 66
 
 
 Underfull \hbox (badness 10000) detected at line 68
-\TU/標楷體(0)/m/n/24 機 械 設 計 工 程 暨 精 密 機 械 工 程 科
- []
-
-
-Underfull \hbox (badness 10000) detected at line 70
-\TU/標楷體(0)/m/n/24 專 題 製 作 報 告
+\TU/標楷體(0)/m/n/24 機 械 設 計 工 程 系
  []
 
 
 LaTeX Font Warning: Font shape `TU/標楷體(0)/b/n' undefined
-(Font)              using `TU/標楷體(0)/m/n' instead on input line 77.
+(Font)              using `TU/標楷體(0)/m/n' instead on input line 72.
 
 
-Overfull \hbox (116.6662pt too wide) detected at line 95
-\TU/標楷體(0)/m/n/17.28 指 導 教 授：|  嚴 家 銘 老 師
+Overfull \hbox (168.51225pt too wide) detected at line 88
+\TU/標楷體(0)/m/n/20.74 指 導 教 授：|  嚴 家 銘 老 師
  []
 
 
-Overfull \hbox (82.1062pt too wide) detected at line 97
-\TU/標楷體(0)/m/n/17.28 班 級：|  四 設 三 乙
+Overfull \hbox (127.03224pt too wide) detected at line 90
+\TU/標楷體(0)/m/n/20.74 班 級：|  四 設 二 甲
  []
 
 
-Overfull \hbox (145.45496pt too wide) detected at line 99
-\TU/標楷體(0)/m/n/17.28 學 生：|  楊 子 頡 \TU/TimesNewRoman(0)/m/n/17.28 (41023218)
+Overfull \hbox (202.29578pt too wide) detected at line 92
+\TU/標楷體(0)/m/n/20.74 學 生：|  第 一 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
  []
 
 
-Overfull \hbox (145.89752pt too wide) detected at line 102
- \TU/標楷體(0)/m/n/17.28 楊 建 霖 \TU/TimesNewRoman(0)/m/n/17.28 (41023248)
+Overfull \hbox (200.52664pt too wide) detected at line 95
+ \TU/標楷體(0)/m/n/20.74 第 二 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
  []
 
 
-Overfull \hbox (145.89752pt too wide) detected at line 104
- \TU/標楷體(0)/m/n/17.28 詹 侑 儒 \TU/TimesNewRoman(0)/m/n/17.28 (41023251)
+Overfull \hbox (200.52664pt too wide) detected at line 97
+ \TU/標楷體(0)/m/n/20.74 第 三 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
  []
 
 
-Overfull \hbox (145.89752pt too wide) detected at line 106
- \TU/標楷體(0)/m/n/17.28 蔡 宗 瑋 \TU/TimesNewRoman(0)/m/n/17.28 (41023254)
+Overfull \hbox (200.52664pt too wide) detected at line 99
+ \TU/標楷體(0)/m/n/20.74 第 四 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
  []
 
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 111--114
- [] 
+Overfull \hbox (200.52664pt too wide) detected at line 101
+ \TU/標楷體(0)/m/n/20.74 第 五 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+ []
+
+
+Overfull \hbox (200.52664pt too wide) detected at line 103
+ \TU/標楷體(0)/m/n/20.74 第 六 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+ []
+
+
+Overfull \hbox (200.52664pt too wide) detected at line 105
+ \TU/標楷體(0)/m/n/20.74 第 七 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
+ []
+
+
+Overfull \hbox (200.52664pt too wide) detected at line 107
+ \TU/標楷體(0)/m/n/20.74 第 八 位 \TU/TimesNewRoman(0)/m/n/20.74 (411231xx)
  []
 
 [1
 
-]
-LaTeX Font Info:    Calculating math sizes for size <15> on input line 125.
+] (abstract.tex [1
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 125--126
-[]$[]$ 
- []
-
-
-Overfull \hbox (30.0pt too wide) in paragraph at lines 125--126
-[]$ 
- []
-
-
-Overfull \hbox (30.0pt too wide) in paragraph at lines 125--126
-[]$ 
- []
-
-
-Overfull \hbox (30.0pt too wide) in paragraph at lines 125--126
-[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 136
-\TU/標楷體(0)/m/n/16 評 審 委 員
- []
-
-LaTeX Font Info:    Calculating math sizes for size <16> on input line 137.
-
-Overfull \hbox (96.0pt too wide) in paragraph at lines 137--138
-[]$[]$ 
- []
-
-
-Overfull \hbox (96.0pt too wide) in paragraph at lines 137--138
-[]$ 
- []
-
-
-Overfull \hbox (96.0pt too wide) in paragraph at lines 137--138
-[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 142
-\TU/標楷體(0)/m/n/16 指 導 老 師
- []
-
-
-Underfull \hbox (badness 10000) detected at line 143
-\TU/標楷體(0)/m/n/16 系 主 任
- []
-
-
-Underfull \hbox (badness 10000) detected at line 145
-\TU/標楷體(0)/m/n/16 中 華 民 國 一 一 二 年
- []
-
-
-Underfull \hbox (badness 10000) detected at line 146
-\TU/標楷體(0)/m/n/16 六 月 七 日
- []
-
-[1] (abstract.tex [1
-
-]) [2] [3] (cd_report_win.toc
-Overfull \hbox (1.77997pt too wide) detected at line 15
- \TU/TimesNewRoman(0)/m/n/17.28 13
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 16
- \TU/TimesNewRoman(0)/m/n/17.28 17
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 17
- \TU/TimesNewRoman(0)/m/n/17.28 18
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 18
- \TU/TimesNewRoman(0)/m/n/17.28 18
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 19
- \TU/TimesNewRoman(0)/m/n/17.28 19
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 20
- \TU/TimesNewRoman(0)/m/n/17.28 20
- []
-
-[4
+]) [2] (cd_report_win.toc [3
 
 ]
-Overfull \hbox (1.77997pt too wide) detected at line 21
- \TU/TimesNewRoman(0)/m/n/17.28 22
+Overfull \hbox (1.37032pt too wide) detected at line 21
+ \TU/TimesNewRoman(0)/m/n/20.74 11
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 22
- \TU/TimesNewRoman(0)/m/n/17.28 23
+Overfull \hbox (2.13997pt too wide) detected at line 22
+ \TU/TimesNewRoman(0)/m/n/20.74 15
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 23
- \TU/TimesNewRoman(0)/m/n/17.28 24
+Overfull \hbox (2.13997pt too wide) detected at line 23
+ \TU/TimesNewRoman(0)/m/n/20.74 17
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 24
- \TU/TimesNewRoman(0)/m/n/17.28 25
+Overfull \hbox (2.13997pt too wide) detected at line 24
+ \TU/TimesNewRoman(0)/m/n/20.74 17
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 25
- \TU/TimesNewRoman(0)/m/n/17.28 27
+Overfull \hbox (2.13997pt too wide) detected at line 25
+ \TU/TimesNewRoman(0)/m/n/20.74 17
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 26
- \TU/TimesNewRoman(0)/m/n/17.28 27
+Overfull \hbox (2.13997pt too wide) detected at line 26
+ \TU/TimesNewRoman(0)/m/n/20.74 19
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 27
- \TU/TimesNewRoman(0)/m/n/17.28 27
+Overfull \hbox (2.13997pt too wide) detected at line 27
+ \TU/TimesNewRoman(0)/m/n/20.74 20
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 28
- \TU/TimesNewRoman(0)/m/n/17.28 28
+Overfull \hbox (2.13997pt too wide) detected at line 28
+ \TU/TimesNewRoman(0)/m/n/20.74 20
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 29
- \TU/TimesNewRoman(0)/m/n/17.28 28
+Overfull \hbox (2.13997pt too wide) detected at line 29
+ \TU/TimesNewRoman(0)/m/n/20.74 20
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 30
- \TU/TimesNewRoman(0)/m/n/17.28 28
+Overfull \hbox (2.13997pt too wide) detected at line 30
+ \TU/TimesNewRoman(0)/m/n/20.74 20
  []
 
 
-Overfull \hbox (1.77997pt too wide) detected at line 31
- \TU/TimesNewRoman(0)/m/n/17.28 29
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 32
- \TU/TimesNewRoman(0)/m/n/17.28 29
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 33
- \TU/TimesNewRoman(0)/m/n/17.28 29
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 34
- \TU/TimesNewRoman(0)/m/n/17.28 31
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 35
- \TU/TimesNewRoman(0)/m/n/17.28 31
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 36
- \TU/TimesNewRoman(0)/m/n/17.28 33
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 37
- \TU/TimesNewRoman(0)/m/n/17.28 35
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 38
- \TU/TimesNewRoman(0)/m/n/17.28 37
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 39
- \TU/TimesNewRoman(0)/m/n/17.28 37
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 40
- \TU/TimesNewRoman(0)/m/n/17.28 37
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 41
- \TU/TimesNewRoman(0)/m/n/17.28 40
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 42
- \TU/TimesNewRoman(0)/m/n/17.28 40
- []
-
-[5]
-Overfull \hbox (1.77997pt too wide) detected at line 43
- \TU/TimesNewRoman(0)/m/n/17.28 41
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 44
- \TU/TimesNewRoman(0)/m/n/17.28 41
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 45
- \TU/TimesNewRoman(0)/m/n/17.28 43
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 46
- \TU/TimesNewRoman(0)/m/n/17.28 44
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 47
- \TU/TimesNewRoman(0)/m/n/17.28 45
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 48
- \TU/TimesNewRoman(0)/m/n/17.28 46
- []
-
-
-Overfull \hbox (1.77997pt too wide) detected at line 49
- \TU/TimesNewRoman(0)/m/n/17.28 48
+Overfull \hbox (2.13997pt too wide) detected at line 31
+ \TU/TimesNewRoman(0)/m/n/20.74 23
  []
 
 )
 \tf@toc=\write4
 \openout4 = `cd_report_win.toc'.
 
- [6] (cd_report_win.lof
-Overfull \hbox (0.363pt too wide) detected at line 11
- []\TU/lmr/m/n/17.28 17
+ [4] (cd_report_win.lof
+Overfull \hbox (0.43929pt too wide) detected at line 18
+ []\TU/lmr/m/n/20.74 10
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 13
- []\TU/lmr/m/n/17.28 18
+Overfull \hbox (0.43929pt too wide) detected at line 19
+ []\TU/lmr/m/n/20.74 10
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 14
- []\TU/lmr/m/n/17.28 19
+Overfull \hbox (0.43929pt too wide) detected at line 20
+ []\TU/lmr/m/n/20.74 11
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 15
- []\TU/lmr/m/n/17.28 19
+Overfull \hbox (0.43929pt too wide) detected at line 21
+ []\TU/lmr/m/n/20.74 12
  []
 
-
-Overfull \hbox (0.363pt too wide) detected at line 16
- []\TU/lmr/m/n/17.28 20
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 17
- []\TU/lmr/m/n/17.28 21
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 18
- []\TU/lmr/m/n/17.28 22
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 19
- []\TU/lmr/m/n/17.28 23
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 20
- []\TU/lmr/m/n/17.28 23
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 21
- []\TU/lmr/m/n/17.28 23
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 22
- []\TU/lmr/m/n/17.28 23
- []
-
-[7
+[5
 
 ]
-Overfull \hbox (0.363pt too wide) detected at line 23
- []\TU/lmr/m/n/17.28 24
+Overfull \hbox (0.43929pt too wide) detected at line 22
+ []\TU/lmr/m/n/20.74 12
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 25
- []\TU/lmr/m/n/17.28 28
+Overfull \hbox (0.43929pt too wide) detected at line 23
+ []\TU/lmr/m/n/20.74 13
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 26
- []\TU/lmr/m/n/17.28 29
+Overfull \hbox (0.43929pt too wide) detected at line 24
+ []\TU/lmr/m/n/20.74 13
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 28
- []\TU/lmr/m/n/17.28 31
+Overfull \hbox (0.43929pt too wide) detected at line 25
+ []\TU/lmr/m/n/20.74 14
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 29
- []\TU/lmr/m/n/17.28 32
+Overfull \hbox (0.43929pt too wide) detected at line 26
+ []\TU/lmr/m/n/20.74 14
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 30
- []\TU/lmr/m/n/17.28 36
+Overfull \hbox (0.43929pt too wide) detected at line 27
+ []\TU/lmr/m/n/20.74 15
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 31
- []\TU/lmr/m/n/17.28 36
+Overfull \hbox (0.43929pt too wide) detected at line 28
+ []\TU/lmr/m/n/20.74 16
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 32
- []\TU/lmr/m/n/17.28 36
+Overfull \hbox (0.43929pt too wide) detected at line 29
+ []\TU/lmr/m/n/20.74 16
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 33
- []\TU/lmr/m/n/17.28 36
+Overfull \hbox (0.43929pt too wide) detected at line 31
+ []\TU/lmr/m/n/20.74 17
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 35
- []\TU/lmr/m/n/17.28 38
+Overfull \hbox (0.43929pt too wide) detected at line 32
+ []\TU/lmr/m/n/20.74 18
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 36
- []\TU/lmr/m/n/17.28 38
+Overfull \hbox (0.43929pt too wide) detected at line 33
+ []\TU/lmr/m/n/20.74 18
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 38
- []\TU/lmr/m/n/17.28 40
+Overfull \hbox (0.43929pt too wide) detected at line 34
+ []\TU/lmr/m/n/20.74 19
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 39
- []\TU/lmr/m/n/17.28 41
+Overfull \hbox (0.43929pt too wide) detected at line 35
+ []\TU/lmr/m/n/20.74 19
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 40
- []\TU/lmr/m/n/17.28 41
+Overfull \hbox (0.43929pt too wide) detected at line 37
+ []\TU/lmr/m/n/20.74 20
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 41
- []\TU/lmr/m/n/17.28 41
+Overfull \hbox (0.43929pt too wide) detected at line 38
+ []\TU/lmr/m/n/20.74 21
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 42
- []\TU/lmr/m/n/17.28 41
+Overfull \hbox (0.43929pt too wide) detected at line 39
+ []\TU/lmr/m/n/20.74 21
  []
 
 
-Overfull \hbox (0.363pt too wide) detected at line 43
- []\TU/lmr/m/n/17.28 42
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 46
- []\TU/lmr/m/n/17.28 47
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 47
- []\TU/lmr/m/n/17.28 47
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 48
- []\TU/lmr/m/n/17.28 47
- []
-
-[8]
-Overfull \hbox (0.363pt too wide) detected at line 49
- []\TU/lmr/m/n/17.28 47
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 50
- []\TU/lmr/m/n/17.28 47
+Overfull \hbox (0.43929pt too wide) detected at line 40
+ []\TU/lmr/m/n/20.74 22
  []
 
 )
 \tf@lof=\write5
 \openout5 = `cd_report_win.lof'.
 
- [9] (cd_report_win.lot
-Overfull \hbox (0.363pt too wide) detected at line 4
- []\TU/lmr/m/n/17.28 26
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 5
- []\TU/lmr/m/n/17.28 26
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 7
- []\TU/lmr/m/n/17.28 28
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 10
- []\TU/lmr/m/n/17.28 39
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 11
- []\TU/lmr/m/n/17.28 39
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 12
- []\TU/lmr/m/n/17.28 39
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 14
- []\TU/lmr/m/n/17.28 42
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 15
- []\TU/lmr/m/n/17.28 42
- []
-
-
-Overfull \hbox (0.363pt too wide) detected at line 18
- []\TU/lmr/m/n/17.28 46
- []
-
-)
-\tf@lot=\write6
-\openout6 = `cd_report_win.lot'.
-
- (1_introduction.tex [10
-
-]
+ (1_introduction.tex [6]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-File: ./../images//四足機器狗(PLA).png Graphic file (type bmp)
-<./../images//四足機器狗(PLA).png>
-[1
+File: ./../images//35.png Graphic file (type bmp)
+<./../images//35.png>
+) (2_player_making_process.tex [1
 
 ]
-File: ./../images//研究架構.png Graphic file (type bmp)
-<./../images//研究架構.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-[3]) (2_FEM.tex
 Chapter 2.
-File: ./../images//有限元素法.png Graphic file (type bmp)
-<./../images//有限元素法.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-[4
+File: ./../images//36.png Graphic file (type bmp)
+<./../images//36.png>
+File: ./../images//37.png Graphic file (type bmp)
+<./../images//37.png>
+[2
 
 ]
-File: ./../images//有限元素法介紹.png Graphic file (type bmp)
-<./../images//有限元素法介紹.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-[6]
-File: ./../images//網格1mm-1.png Graphic file (type bmp)
-<./../images//網格1mm-1.png>
-File: ./../images//網格50mm-1.png Graphic file (type bmp)
-<./../images//網格50mm-1.png>
-File: ./../images//網格1mm-2.png Graphic file (type bmp)
-<./../images//網格1mm-2.png>
-File: ./../images//網格50mm-2.png Graphic file (type bmp)
-<./../images//網格50mm-2.png>
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
-
- []
-
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 128.
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-Missing character: There is no 、 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 和 in font [lmroman12-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
-
- []
-
-File: ./../images//有限元素法分析流程.png Graphic file (type bmp)
-<./../images//有限元素法分析流程.png>
-[16] [17]) (3_Quadruped_robot.tex
+File: ./../images//38.png Graphic file (type bmp)
+<./../images//38.png>
+File: ./../images//39.png Graphic file (type bmp)
+<./../images//39.png>
+) (3_Lua_source_code.tex [3]
 Chapter 3.
-File: ./../images//四足機器人步驟圖.png Graphic file (type bmp)
-<./../images//四足機器人步驟圖.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
+ []
+
+File: ./../images//40.png Graphic file (type bmp)
+<./../images//40.png>
+
+Overfull \hbox (6.85922pt too wide) in paragraph at lines 16--17
+\TU/TimesNewRoman(0)/m/n/14 ity1\TU/標楷體(0)/m/n/14 ，| \TU/TimesNewRoman(0)/m/n/1
+4 rightWheelVelocity1\TU/標楷體(0)/m/n/14 ，| \TU/TimesNewRoman(0)/m/n/14 leftWheel
+Velocity2\TU/標楷體(0)/m/n/14 ，| \TU/TimesNewRoman(0)/m/n/14 rightWheelVelocity2\T
+U/標楷體(0)/m/n/14 ，|  分 別
  []
 
 
@@ -1601,231 +1103,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-[18
+[4
 
 ]
+File: ./../images//41.png Graphic file (type bmp)
+<./../images//41.png>
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
+File: ./../images//42.png Graphic file (type bmp)
+<./../images//42.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-File: ./../images//三連桿閉環機構.png Graphic file (type bmp)
-<./../images//三連桿閉環機構.png>
-File: ./../images//步行機構ggb.png Graphic file (type bmp)
-<./../images//步行機構ggb.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
+[5]
+File: ./../images//43.png Graphic file (type bmp)
+<./../images//43.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+[6]
+File: ./../images//44.png Graphic file (type bmp)
+<./../images//44.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+File: ./../images//45.png Graphic file (type bmp)
+<./../images//45.png>
+) (4_timer_scooreboard.tex
+Underfull \hbox (badness 10000) in paragraph at lines 60--1
 
  []
 
-File: ./../images//四足機器狗.png Graphic file (type bmp)
-<./../images//四足機器狗.png>
-[20]
-File: ./../images//零件表.png Graphic file (type bmp)
-<./../images//零件表.png>
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+[7] [8]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-File: ./../images//機械腿運動軌跡.png Graphic file (type bmp)
-<./../images//機械腿運動軌跡.png>
-[22]
-File: ./../images//步行機構分解圖.png Graphic file (type bmp)
-<./../images//步行機構分解圖.png>
-File: ./../images//步行機構.png Graphic file (type bmp)
-<./../images//步行機構.png>
-File: ./../images//馬達(一)控制件.png Graphic file (type bmp)
-<./../images//馬達(一)控制件.png>
-File: ./../images//馬達(二)控制件.png Graphic file (type bmp)
-<./../images//馬達(二)控制件.png>
+File: ./../images//46.png Graphic file (type bmp)
+<./../images//46.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
+[8
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+]
+File: ./../images//47.png Graphic file (type bmp)
+<./../images//47.png>
 
- []
-
-[23]
-File: ./../images//Forward kinematics formula.png Graphic file (type bmp)
-<./../images//Forward kinematics formula.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
+[9]
+File: ./../images//48.png Graphic file (type bmp)
+<./../images//48.png>
+File: ./../images//49.png Graphic file (type bmp)
+<./../images//49.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
+Overfull \hbox (49.8342pt too wide) in paragraph at lines 34--43
+[]\TU/TimesNewRoman(0)/m/n/14 (\TU/標楷體(0)/m/n/14 圖\TU/TimesNewRoman(0)/m/n/14 .
+[]4.3[]) sysCall actuation \TU/標楷體(0)/m/n/14 在 模 擬 時 被 調 用，|  首 先 藉 由 \TU/Times
+NewRoman(0)/m/n/14 sim.getSimulationTime()
  []
 
+[10]
+File: ./../images//50.png Graphic file (type bmp)
+<./../images//50.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-
-Overfull \hbox (5.62006pt too wide) in paragraph at lines 202--217
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 47--48
  [] 
  []
 
-[26]) (4_Design_and_Simulation_Environment.tex
-Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
+[11]
+File: ./../images//51.png Graphic file (type bmp)
+<./../images//51.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 55--56
+ [] 
  []
 
-[27
+File: ./../images//52.png Graphic file (type bmp)
+<./../images//52.png>
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 63--64
+ [] 
  []
 
+File: ./../images//53.png Graphic file (type bmp)
+<./../images//53.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 71--72
+ [] 
  []
 
-File: ./../images//coppeliasim常用功能.png Graphic file (type bmp)
-<./../images//coppeliasim常用功能.png>
-File: ./../images//CoppeliaSim.png Graphic file (type bmp)
-<./../images//CoppeliaSim.png>
+[12]
+File: ./../images//54.png Graphic file (type bmp)
+<./../images//54.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 80--81
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
+[13]
+File: ./../images//55.png Graphic file (type bmp)
+<./../images//55.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 89--90
+ [] 
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+File: ./../images//56.png Graphic file (type bmp)
+<./../images//56.png>
 
- []
-
-[30]) (5_Quadruped_robot_Design_Kinematic_Simulation.tex
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
-
- []
-
-File: ./../images//cop組裝步驟.png Graphic file (type bmp)
-<./../images//cop組裝步驟.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
- []
-
-[31
-
-]
-File: ./../images//cop參數設定.png Graphic file (type bmp)
-<./../images//cop參數設定.png>
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 30.
-
-LaTeX Font Warning: Font shape `TU/標楷體(0)/m/it' undefined
-(Font)              using `TU/標楷體(0)/m/n' instead on input line 35.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-Missing character: There is no ␣ in font Times New Roman/OT:script=latn;languag
-e=dflt;!
-Missing character: There is no ␣ in font Times New Roman/OT:script=latn;languag
-e=dflt;!
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 97--98
+ [] 
  []
 
 
@@ -1833,342 +1247,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[14]
+File: ./../images//57.png Graphic file (type bmp)
+<./../images//57.png>
+ [15]
+File: ./../images//58.png Graphic file (type bmp)
+<./../images//58.png>
+File: ./../images//59.png Graphic file (type bmp)
+<./../images//59.png>
+
+Overfull \hbox (22.16492pt too wide) in paragraph at lines 119--126
+\TU/TimesNewRoman(0)/m/n/14 /scorebord/board a/joint[1] \TU/標楷體(0)/m/n/14 的 關 節
+ 存 入 變 量\TU/TimesNewRoman(0)/m/n/14 "a1"\TU/標楷體(0)/m/n/14 ，|  以 \TU/TimesNewRom
+an(0)/m/n/14 sim.getJointTargetPosition()
+ []
+
+) (5_Coppeliasim_simulate_scene.tex
+Underfull \hbox (badness 10000) in paragraph at lines 127--1
 
  []
 
-File: ./../images//各式步態圖.png Graphic file (type bmp)
-<./../images//各式步態圖.png>
-[35]
-File: ./../images//模擬動作-1.png Graphic file (type bmp)
-<./../images//模擬動作-1.png>
-File: ./../images//模擬動作-2.png Graphic file (type bmp)
-<./../images//模擬動作-2.png>
+[16]
+Chapter 5.
 
-Overfull \hbox (2.22pt too wide) in paragraph at lines 146--159
-[][]  [] 
- []
-
-File: ./../images//模擬動作-3.png Graphic file (type bmp)
-<./../images//模擬動作-3.png>
-[36]) (6_FEM_of_Quadruped_robot.tex
-Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[37
+File: ./../images//15.png Graphic file (type bmp)
+<./../images//15.png>
+File: ./../images//28.png Graphic file (type bmp)
+<./../images//28.png>
+[17
 
 ]
-File: ./../images//分析比對表1.png Graphic file (type bmp)
-<./../images//分析比對表1.png>
-File: ./../images//分析比對表2.png Graphic file (type bmp)
-<./../images//分析比對表2.png>
- [38] [39]) (7_Generative_Design.tex
+File: ./../images//29.png Graphic file (type bmp)
+<./../images//29.png>
+ [18]
+File: ./../images//60.png Graphic file (type bmp)
+<./../images//60.png>
+File: ./../images//61.png Graphic file (type bmp)
+<./../images//61.png>
+) (6_game_conection.tex [19]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+File: ./../images//03.png Graphic file (type bmp)
+<./../images//03.png>
+File: ./../images//07.png Graphic file (type bmp)
+<./../images//07.png>
+File: ./../images//08.png Graphic file (type bmp)
+<./../images//08.png>
+[20
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+[21]
+File: ./../images//09.png Graphic file (type bmp)
+<./../images//09.png>
+
+Overfull \hbox (114.15562pt too wide) in paragraph at lines 37--38
+ [] 
+ []
+
+) (7_suggestion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 41--1
+
+ []
+
+[22]
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-File: ./../images//生成式流程.png Graphic file (type bmp)
-<./../images//生成式流程.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
+)
+Underfull \hbox (badness 10000) in paragraph at lines 4--152
 
  []
 
+[23
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
-
- []
-
-[40
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-File: ./../images//Leg1-1+1-5(拓樸).png Graphic file (type bmp)
-<./../images//Leg1-1+1-5(拓樸).png>
-File: ./../images//Leg4(拓樸).png Graphic file (type bmp)
-<./../images//Leg4(拓樸).png>
-File: ./../images//Leg1-1+1-5(輕量化).png Graphic file (type bmp)
-<./../images//Leg1-1+1-5(輕量化).png>
-File: ./../images//Leg4(輕量化).png Graphic file (type bmp)
-<./../images//Leg4(輕量化).png>
-[41]
-File: ./../images//分析比對表(輕量化).png Graphic file (type bmp)
-<./../images//分析比對表(輕量化).png>
-
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 74--75
- [] 
- []
-
-[42]) (8_Conclusion.tex
-Chapter 8.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-[43
-
-]) (9_Future_Directions.tex
-Chapter 9.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-[44
-
-]) (10_reference.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-[][]\TU/TimesNewRoman(0)/m/n/14 https://cn.comsol.com/multiphysics/fea-software
-?parent=finite-element-
- []
-
-
-Overfull \hbox (17.35532pt too wide) in paragraph at lines 8--9
-[][]\TU/TimesNewRoman(0)/m/n/14 https://forums.autodesk.com/autodesk/attachment
-s/autodesk/915/18197/2/\TU/標楷體(0)/m/n/14 一
- []
-
-[45
-
-]) (11_appendix.tex [46]
-File: ./../images//足端軌跡(直線).png Graphic file (type bmp)
-<./../images//足端軌跡(直線).png>
-File: ./../images//足端軌跡(橢圓).png Graphic file (type bmp)
-<./../images//足端軌跡(橢圓).png>
-File: ./../images//足端軌跡(圓形).png Graphic file (type bmp)
-<./../images//足端軌跡(圓形).png>
-File: ./../images//足端軌跡(弧線).png Graphic file (type bmp)
-<./../images//足端軌跡(弧線).png>
-File: ./../images//足端軌跡(不規則).png Graphic file (type bmp)
-<./../images//足端軌跡(不規則).png>
- [47])
-File: ./../images//41023218.jpg Graphic file (type bmp)
-<./../images//41023218.jpg>
-
-Underfull \hbox (badness 10000) detected at line 212
-\TU/標楷體(0)/m/n/14 姓 名
- []
-
-
-Underfull \hbox (badness 10000) detected at line 213
-\TU/標楷體(0)/m/n/14 陳 岳 檉
- []
-
-
-Underfull \hbox (badness 10000) detected at line 214
-\TU/標楷體(0)/m/n/14 學 號
- []
-
-
-Overfull \hbox (86.33334pt too wide) detected at line 218
-\TU/標楷體(0)/m/n/14 國 立 虎 尾 科 技 大 學 機 械 設 計 工 程 系
- []
-
-
-Underfull \hbox (badness 10000) detected at line 220
-\TU/標楷體(0)/m/n/14 經 歷
- []
-
-
-Overfull \hbox (126.0pt too wide) detected at line 221
-\TU/標楷體(0)/m/n/14 國 立 彰 化 師 範 大 學 附 屬 高 級 工 業 職 業 學 校
- []
-
-
-Underfull \hbox (badness 10000) detected at line 222
- 
- []
-
-
-Underfull \hbox (badness 10000) detected at line 223
-\TU/標楷體(0)/m/n/14 機 電 科
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--224
-
- []
-
-File: ./../images//41023248.jpg Graphic file (type bmp)
-<./../images//41023248.jpg>
-
-Underfull \hbox (badness 10000) detected at line 235
-\TU/標楷體(0)/m/n/14 姓 名
- []
-
-
-Underfull \hbox (badness 10000) detected at line 236
-\TU/標楷體(0)/m/n/14 蔡 弦 霖
- []
-
-
-Underfull \hbox (badness 10000) detected at line 238
-\TU/標楷體(0)/m/n/14 學 號
- []
-
-
-Overfull \hbox (86.33334pt too wide) detected at line 242
-\TU/標楷體(0)/m/n/14 國 立 虎 尾 科 技 大 學 機 械 設 計 工 程 系
- []
-
-
-Underfull \hbox (badness 10000) detected at line 244
-\TU/標楷體(0)/m/n/14 經 歷
- []
-
-
-Overfull \hbox (42.0pt too wide) detected at line 245
-\TU/標楷體(0)/m/n/14 國 立 秀 水 高 級 工 業 職 業 學 校
- []
-
-
-Underfull \hbox (badness 10000) detected at line 246
- 
- []
-
-
-Underfull \hbox (badness 10000) detected at line 247
-\TU/標楷體(0)/m/n/14 製 圖 科
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--248
-
- []
-
-File: ./../images//41023251.jpg Graphic file (type bmp)
-<./../images//41023251.jpg>
-
-Underfull \hbox (badness 10000) detected at line 258
-\TU/標楷體(0)/m/n/14 姓 名
- []
-
-
-Underfull \hbox (badness 10000) detected at line 259
-\TU/標楷體(0)/m/n/14 鄭 立 揚
- []
-
-
-Underfull \hbox (badness 10000) detected at line 261
-\TU/標楷體(0)/m/n/14 學 號
- []
-
-
-Overfull \hbox (86.33334pt too wide) detected at line 265
-\TU/標楷體(0)/m/n/14 國 立 虎 尾 科 技 大 學 機 械 設 計 工 程 系
- []
-
-
-Underfull \hbox (badness 10000) detected at line 267
-\TU/標楷體(0)/m/n/14 經 歷
- []
-
-
-Overfull \hbox (14.0pt too wide) detected at line 268
-\TU/標楷體(0)/m/n/14 新 北 市 立 新 莊 高 級 中 學
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--269
-
- []
-
-File: ./../images//41023254.png Graphic file (type bmp)
-<./../images//41023254.png>
-
-Underfull \hbox (badness 10000) detected at line 279
-\TU/標楷體(0)/m/n/14 姓 名
- []
-
-
-Underfull \hbox (badness 10000) detected at line 280
-\TU/標楷體(0)/m/n/14 謝 鴻 元
- []
-
-
-Underfull \hbox (badness 10000) detected at line 281
-\TU/標楷體(0)/m/n/14 學 號
- []
-
-
-Overfull \hbox (86.33334pt too wide) detected at line 284
-\TU/標楷體(0)/m/n/14 國 立 虎 尾 科 技 大 學 機 械 設 計 工 程 系
- []
-
-
-Underfull \hbox (badness 10000) detected at line 286
-\TU/標楷體(0)/m/n/14 經 歷
- []
-
-
-Overfull \hbox (42.0pt too wide) detected at line 287
-\TU/標楷體(0)/m/n/14 國 立 秀 水 高 級 工 業 職 業 學 校
- []
-
-
-Underfull \hbox (badness 10000) detected at line 288
- 
- []
-
-
-Underfull \hbox (badness 10000) detected at line 289
-\TU/標楷體(0)/m/n/14 製 圖 科
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--290
-
- []
-
-[48] [49] (cd_report_win.aux)
+] (cd_report_win.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `cd_report_win.out' has not changed.
-(rerunfilecheck)             Checksum: D12C64F322C3BF040626B7611E4DE17F;4833.
+(rerunfilecheck)             Checksum: A26BD8158A695C24DA219EF74B0584F8;3020.
  ) 
 Here is how much of TeX's memory you used:
- 20566 strings out of 411476
- 405593 string characters out of 5820613
- 1906001 words of memory out of 5000000
- 40432 multiletter control sequences out of 15000+600000
- 532502 words of font info for 179 fonts, out of 8000000 for 9000
+ 19847 strings out of 411476
+ 383924 string characters out of 5820613
+ 1856001 words of memory out of 5000000
+ 39780 multiletter control sequences out of 15000+600000
+ 518161 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,17n,84p,897b,1178s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,84p,790b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cd_report_win.pdf (61 pages).
+Output written on cd_report_win.pdf (31 pages).
