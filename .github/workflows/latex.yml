@@ -20,12 +20,12 @@ jobs:
       - name: Install texlive and related fonts
         run:
           sudo apt install -y texlive texlive-xetex texlive-lang-chinese gsfonts fonts-moe-standard-kai ttf-mscorefonts-installer librsvg2-bin texlive-fonts-extra 
-      - name: compile 40922.tex
+      - name: compile 4101.tex
         working-directory: ./latex
         run: |
-          xelatex 40922.tex
-          xelatex 40922.tex
-          xelatex 40922.tex
+          xelatex 4101.tex
+          xelatex 4101.tex
+          xelatex 4101.tex
 
       - name: Bump version and push tag
         id: tag_version
@@ -51,6 +51,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./latex/40922.pdf
-          asset_name: 40922.pdf
+          asset_path: ./latex/4101.pdf
+          asset_name: 4101.pdf
           asset_content_type: pdf
