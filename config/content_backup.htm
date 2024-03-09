@@ -1,34 +1,12 @@
 <h1>Research</h1>
-<p>專題題目： AI 在平面機構設計上的應用</p>
+<p>專題題目： ODOO PLM 在協同產品設計上的應用 - 以鋼球平衡台機電控制系統設計為例</p>
 <p>執行步驟:</p>
-<p style="padding-left: 30px;">了解如何執行 Pyslvs-UI (<a href="https://github.com/pyslvs/Pyslvs-UI">https://github.com/pyslvs/Pyslvs-UI</a>) 套件的 editable 與 exe 編譯</p>
-<p style="padding-left: 60px;">下載 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EcYbwVPaDyRGpwxNWSRtRj4B7u9IzULS7MivyMAggtiNaQ?e=JGq4KB">Pyslvs_portable_development.7z</a> (需要下載密碼)</p>
-<p style="padding-left: 60px;">在 Windows 64 位元操作系統中, 解開上列壓縮檔案後, 以 start.bat 啟動可攜系統</p>
-<p style="padding-left: 60px;">將 <a href="https://pyslvs.github.io/downloads/pydistutils.cfg">pydistutils.cfg</a> 放入 Y:\home 目錄中, 以便後續能利用 mingw32 對 C++ 程式碼進行編譯</p>
-<p style="padding-left: 60px;">將 <a href="/downloads/win_generate_exe.bat">win_generate_exe.bat</a> 放入 Y:\home\Pyslvs-UI 目錄中, 以便用來建立 .exe 可執行檔案</p>
-<p style="padding-left: 60px;">從 y:\ cd tmp 後, 以 git clone --recurse-submodules <a href="https://github.com/pyslvs/pyslvs.git">https://github.com/pyslvs/pyslvs.git</a> 取下 pyslvs</p>
-<p style="padding-left: 60px;">從 y:\tmp\ cd pyslvs 後, 以 python setup.py build 編譯動態連結程式庫</p>
-<p style="padding-left: 60px;">從 y:\ cd tmp\Pyslvs-UI 之後, 以 pip install -e . 完成 editable 套件安裝</p>
-<p style="padding-left: 60px;">從 y:\ cd tmp\Pyslvs-UI, 以 win_generate_exe.bat 執行後完成 dist 目錄中 .exe 可執行檔案的建立</p>
-<p>相關軟體：Pyslvs，CoppeliaSim，Leo editor，Python and Mojo language system，Solid Edge</p>
-<p>界定何謂 AI。</p>
-<p>瞭解 Pyslvs 的運作原理及使用方法。</p>
-<p>學習如何利用 Msys2 編譯 Pyslvs。</p>
-<p>瞭解平面機構設計(合成)的類別及原理。</p>
-<p>瞭解各類型機構設計的實際應用。</p>
-<p>瞭解 CoppeliaSim XML 檔案格式與架構。</p>
-<p>瞭解如何利用 Python API 驅動 Solid Edge 零組件。</p>
+<p style="padding-left: 30px;"><a href="https://webthesis.biblio.polito.it/16429/1/tesi.pdf">2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf</a> or <a href="http://229.cycu.org/2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf">local download</a> (password required) (Odoo 軟體在產品生命週期管理、製造執行系統及其整合上的功能分析)</p>
+<p style="padding-left: 60px;">英文單字查詢: <a href="https://mde.tw/cd2024/downloads/2021_odoo_reading.html">2021_odoo_reading.html</a></p>
 <hr/>
-<p>以下為擬進行的研究步驟與議題:</p>
-<ol>
-<li>根據<a href="https://mde.tw/cpnote/content/%E7%B7%A8%E8%AD%AF%E7%AF%84%E4%BE%8B.html">編譯範例</a>的說明, 利用 Msys2 完成 Solvespace 原始碼的編譯.</li>
-<li>從<a href="https://solvespace.com/forum.pl?action=viewthread&amp;parent=5269&amp;tt=1682978752">這裡</a>, 可知 Solvespace 檔案格式相關內容.</li>
-<li>從 Solvespace 原始碼找出系統如何將特定 3D 轉為 STL 檔案?</li>
-<li>研究如何從一個簡單的 .slvs 3D 零件轉為 STL 格式?</li>
-<li>研究如何從 Solvespace 轉出的組立檔案, 以 C 或 Python 切割出多零件 STL 檔案?</li>
-<li>研究假如要直接從 .slvs 組立檔案轉為 CoppeliaSim 場景檔案格式, 該如何進行?</li>
-<li>閱讀 <a href="https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf">https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf</a>, 了解假如要自行利用上述取得的零組件 STL 檔案, 直接套用 Dynamic Simulation Engine 進行模擬, 該如何進行?</li>
-</ol><h2>Solvespace</h2>
+<p>相關軟體：<a href="https://www.odoo.com/app/plm-features">Odoo PLM</a>, CoppeliaSim, Onshape</p>
+<p></p>
+<p></p><h2>Solvespace</h2>
 <p><a href="https://www.youtube.com/watch?v=yUa3fnDbeWw">https://www.youtube.com/watch?v=yUa3fnDbeWw</a> </p>
 <p><a href="https://ltnr.ca/Lib/solvespaceTips.html">https://ltnr.ca/Lib/solvespaceTips.html</a> </p>
 <p><a href="https://www.farwire.net/SolveSpace-LearningGuide.htm">https://www.farwire.net/SolveSpace-LearningGuide.htm</a> </p>
