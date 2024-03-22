@@ -108,3 +108,7 @@ start = "pylsp"
 
 [deployment]
 run = ["sh", "-c", "python3 main.py"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
