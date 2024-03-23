@@ -1,89 +1,50 @@
-<h1>Research</h1>
-<p>專題題目： AI 在平面機構設計上的應用</p>
+<h1>About</h1>
+<p>專題題目： ODOO PLM 在協同設計上的應用 - 以鋼球平衡台設計為例</p>
+<p>Application of ODOO PLM in collaborative design - taking the Design of Steel Ball Balancing Platform as an example</p>
 <p>執行步驟:</p>
-<p style="padding-left: 30px;">了解如何執行 Pyslvs-UI (<a href="https://github.com/pyslvs/Pyslvs-UI">https://github.com/pyslvs/Pyslvs-UI</a>) 套件的 editable 與 exe 編譯</p>
-<p style="padding-left: 60px;">下載 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EcYbwVPaDyRGpwxNWSRtRj4B7u9IzULS7MivyMAggtiNaQ?e=JGq4KB">Pyslvs_portable_development.7z</a> (需要下載密碼)</p>
-<p style="padding-left: 60px;">在 Windows 64 位元操作系統中, 解開上列壓縮檔案後, 以 start.bat 啟動可攜系統</p>
-<p style="padding-left: 60px;">將 <a href="https://pyslvs.github.io/downloads/pydistutils.cfg">pydistutils.cfg</a> 放入 Y:\home 目錄中, 以便後續能利用 mingw32 對 C++ 程式碼進行編譯</p>
-<p style="padding-left: 60px;">將 <a href="/downloads/win_generate_exe.bat">win_generate_exe.bat</a> 放入 Y:\home\Pyslvs-UI 目錄中, 以便用來建立 .exe 可執行檔案</p>
-<p style="padding-left: 60px;">從 y:\ cd tmp 後, 以 git clone --recurse-submodules <a href="https://github.com/pyslvs/pyslvs.git">https://github.com/pyslvs/pyslvs.git</a> 取下 pyslvs</p>
-<p style="padding-left: 60px;">從 y:\tmp\ cd pyslvs 後, 以 python setup.py build 編譯動態連結程式庫</p>
-<p style="padding-left: 60px;">從 y:\ cd tmp\Pyslvs-UI 之後, 以 pip install -e . 完成 editable 套件安裝</p>
-<p style="padding-left: 60px;">從 y:\ cd tmp\Pyslvs-UI, 以 win_generate_exe.bat 執行後完成 dist 目錄中 .exe 可執行檔案的建立</p>
-<p>相關軟體：Pyslvs，CoppeliaSim，Leo editor，Python and Mojo language system，Solid Edge</p>
-<p>界定何謂 AI。</p>
-<p>瞭解 Pyslvs 的運作原理及使用方法。</p>
-<p>學習如何利用 Msys2 編譯 Pyslvs。</p>
-<p>瞭解平面機構設計(合成)的類別及原理。</p>
-<p>瞭解各類型機構設計的實際應用。</p>
-<p>瞭解 CoppeliaSim XML 檔案格式與架構。</p>
-<p>瞭解如何利用 Python API 驅動 Solid Edge 零組件。</p>
+<p style="padding-left: 30px;"><a href="https://webthesis.biblio.polito.it/16429/1/tesi.pdf">2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf</a> or <a href="http://229.cycu.org/2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf">local download</a> (password required) (Odoo 軟體在產品生命週期管理、製造執行系統及其整合上的功能分析)</p>
+<p style="padding-left: 60px;">英文單字查詢: <a href="https://mde.tw/cd2024/downloads/2021_odoo_reading.html">2021_odoo_reading.html</a></p>
 <hr/>
-<p>以下為擬進行的研究步驟與議題:</p>
-<ol>
-<li>根據<a href="https://mde.tw/cpnote/content/%E7%B7%A8%E8%AD%AF%E7%AF%84%E4%BE%8B.html">編譯範例</a>的說明, 利用 Msys2 完成 Solvespace 原始碼的編譯.</li>
-<li>從<a href="https://solvespace.com/forum.pl?action=viewthread&amp;parent=5269&amp;tt=1682978752">這裡</a>, 可知 Solvespace 檔案格式相關內容.</li>
-<li>從 Solvespace 原始碼找出系統如何將特定 3D 轉為 STL 檔案?</li>
-<li>研究如何從一個簡單的 .slvs 3D 零件轉為 STL 格式?</li>
-<li>研究如何從 Solvespace 轉出的組立檔案, 以 C 或 Python 切割出多零件 STL 檔案?</li>
-<li>研究假如要直接從 .slvs 組立檔案轉為 CoppeliaSim 場景檔案格式, 該如何進行?</li>
-<li>閱讀 <a href="https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf">https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf</a>, 了解假如要自行利用上述取得的零組件 STL 檔案, 直接套用 Dynamic Simulation Engine 進行模擬, 該如何進行?</li>
-</ol><h2>Solvespace</h2>
-<p><a href="https://www.youtube.com/watch?v=yUa3fnDbeWw">https://www.youtube.com/watch?v=yUa3fnDbeWw</a> </p>
-<p><a href="https://ltnr.ca/Lib/solvespaceTips.html">https://ltnr.ca/Lib/solvespaceTips.html</a> </p>
-<p><a href="https://www.farwire.net/SolveSpace-LearningGuide.htm">https://www.farwire.net/SolveSpace-LearningGuide.htm</a> </p>
-<p><a href="https://www.youtube.com/watch?v=vbI9UImoXME">https://www.youtube.com/watch?v=vbI9UImoXME</a> </p>
-<p><a href="https://thenybble.de/posts/solvespace-mini-tutorial/">https://thenybble.de/posts/solvespace-mini-tutorial/</a> </p><h1>About</h1>
-<p><strong> 2023 專題第一組</strong></p>
-<p><strong>利用 CoppeliaSim 建立下列機械手臂場景, 在瀏覽器中以 zmqRemote API 進行 Pick and Place 操控, 並嘗試自行將機械手臂零組件轉入瀏覽器後, 以 Websocket 操控虛擬場景與實體機械手臂.</strong></p>
-<p><strong><a href="https://projecthub.arduino.cc/jonserra/compact-3d-printed-robotic-arm-and-controller-f57d27">https://projecthub.arduino.cc/jonserra/compact-3d-printed-robotic-arm-and-controller-f57d27</a> </strong></p>
-<p><strong> 題目: </strong></p>
-<p>網際機械手臂運動控制與模擬</p>
-<p>Web-based Motion Control and Simulation of Robotic Arm</p>
-<p><strong> members: </strong></p>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">41023218陳岳檉 snowfall-killer</div>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">41023248蔡弦霖 smart-777</div>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">41023251鄭立揚 sdegbsvrtg</div>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">41023254謝鴻元 41023254</div>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></div>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">repository: <a href="https://github.com/mdecycu/pj4101"> https://github.com/mdecycu/pj4101 </a></div>
-<div dir="auto" style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">githubpage: <span class="CheckStep-line-content d-inline-block flex-auto ml-3 js-check-line-content"> <span class=""> <a href="http://mde.tw/pj4101/" rel="noopener noreferrer" target="_blank"> http://mde.tw/pj4101 </a> </span> </span></div>
-<p><a href="https://teams.microsoft.com/_?lm=deeplink&amp;lmsrc=NeutralHomePageWeb&amp;cmpid=WebSignIn&amp;culture=zh-tw&amp;country=tw#/school/conversations/410%20%E5%B0%88%E9%A1%8C?threadId=19:b2f79d6bbc35407daab5d08774581bd0@thread.tacv2&amp;ctx=channel"> Teams 410專題 </a></p><h2>網際 Robot</h2>
-<p>利用 WebGL、Javascript 與零組件的 STL 檔案格式, 可以直接在瀏覽器中顯示機械臂與工作場景, 如下列連結所示:</p>
-<p><a href="/downloads/pick_and_place_robodk_web.html"> pick_and_place_robodk_web.html </a></p>
-<p>其中直接使用 <a href="https://github.com/toji/gl-matrix"> https://github.com/toji/gl-matrix </a> , 並透過類似 <a href="https://github.com/AlmondFlour/WebGL-Robot/blob/master/webgl-utils.js"> https://github.com/AlmondFlour/WebGL-Robot/blob/master/webgl-utils.js </a> 的工具程式, 完成 3D 零組件場景的展示.</p>
-<p>從 <a href="https://github.com/mdecycu/WebGL-Robot"> https://github.com/mdecycu/WebGL-Robot </a> 可知透過 Javascript 程式能夠控制瀏覽器中機械臂與各 3D 零件的位置及方位.</p>
-<p>且從最上方取自 RoboDK Web server 所送出的機械臂工作場景, 可以發現是採用 Websocket 由伺服器送出控制機械臂的變數值, 以便進行遠端操控模擬.</p>
-<p>因此, 若能使用 Python + Flask 建立送出控制訊號的 Websocket, 來控制 WebGL 展示的機械臂工作場景, 便可將近端模擬的流程擴大到全球資訊網中, 以作為協同產品設計中的一個系統模擬環節.</p>
-<p>一旦上述各項測試完成, 即可接續完成:</p>
-<p>網際機械手臂運動控制與模擬</p>
-<p>Web-based Motion Control and Simulation of Robotic Arm</p>
-<p>參考資料:</p>
-<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EacZ6WVokl5FlVIVoqmjQrcBJwkjeDk_UP23mx-yRx16Pg?e=UCpwMW"> Javascript Syntax Quick Reference </a> (需要下載密碼)</p>
-<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EZbaLK9xqwlLia7lHthgyjIBTb6IE_ywffMbJMp34wv6kw?e=Cg7OlT"> Beginning WebGL for HTML </a> (需要下載密碼)</p>
-<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/ERsS_eikZsxKo51dFT9OZ0YBSsEHeOHcBZjMyIioC-zhnA?e=tizzFb"> Interactive Computer Graphics </a> (WebGL, 需要下載密碼)</p>
-<p style="padding-left: 30px;"><a href="https://www.researchgate.net/publication/285582243_A_Web-based_Robotic_Design_and_Simulation_System_in_Java_3D"> 2003 A Web-based Robotic Design and Simulation System in Java 3D </a></p>
-<p style="padding-left: 30px;"><a href="https://www.sciencedirect.com/science/article/pii/S2405896322002130"> 2022 Assembly: A Web-Based Multi-Robot Programming and Simulation Tool</a></p>
-<p style="padding-left: 30px;"></p>
-<h1>進度紀錄</h1>
-<h2>0921</h2>
-<p>1.服用心靈雞湯</p>
-<p>2.研究車門鎖</p>
-<p>3.整理實驗室</p>
-<p>4.開始經營小組網站</p>
+<p>相關軟體：<a href="https://www.odoo.com/app/plm-features">Odoo PLM</a>, CoppeliaSim, Onshape</p>
+<p>members:</p>
+<p><br/>41023218 陳岳檉 snowfall-killer<br/>41023248 蔡弦霖 smart-777<br/>41023251 鄭立揚 sdegbsvrtg<br/>41023254 謝鴻元 41023254<br/><br/>repository: <a href="https://github.com/mdecycu/pj4101">https://github.com/mdecycu/pj4101</a> <br/>githubpage: <a href="http://mde.tw/pj4101">http://mde.tw/pj4101</a></p>
+<p><a href="https://teams.microsoft.com/_?lm=deeplink&amp;lmsrc=NeutralHomePageWeb&amp;cmpid=WebSignIn&amp;culture=zh-tw&amp;country=tw#/school/conversations/410%20%E5%B0%88%E9%A1%8C?threadId=19:b2f79d6bbc35407daab5d08774581bd0@thread.tacv2&amp;ctx=channel"> Teams 410專題</a></p>
+<h1>PLM</h1>
+<p>Product Lifecycle Management</p>
+<h1>Control</h1>
+<p><a href="https://link.springer.com/book/10.1007/978-3-030-93445-3">Automatic Control Systems With Matlab</a> (改用 Python 進行分析運算)</p>
+<p>Principle of Automatic Control: <a href="https://ocw.mit.edu/courses/16-06-principles-of-automatic-control-fall-2012/pages/lecture-notes/">https://ocw.mit.edu/courses/16-06-principles-of-automatic-control-fall-2012/pages/lecture-notes/</a> </p><h1>1d</h1>
+<p>Ball and Beam balancing control system</p>
 <p></p>
-<h1>Robot</h1>
-<p><a href="https://youtu.be/5toNqaGsGYs">https://youtu.be/5toNqaGsGYs</a></p>
-<p>控制卡:</p>
-<p><a href="https://shop.playrobot.com/products/arduino-mcr0018">Arduino Leonardo + headers</a></p>
-<p><a href="https://www.taiwaniot.com.tw/product/mg90s-14g%E5%85%A8%E9%87%91%E5%B1%AC%E9%BD%92%E8%88%B5%E6%A9%9F-servo-%E4%BC%BA%E6%9C%8D%E6%A9%9F/">Servo Motor</a></p>
-<p><a href="https://github.com/mdecycu/CompactRoboticArm">https://github.com/mdecycu/CompactRoboticArm</a></p>
-<p style="padding-left: 30px;"><a href="/downloads/BuildSomeStuff-CompactRoboticArm-399a44a.zip">BuildSomeStuff-CompactRoboticArm-399a44a.zip</a></p>
-<h1>Brython</h1>
-<p>cmsite: wcms use <a href="https://github.com/mdecycu/cmsimde"> https://github.com/mdecycu/cmsimde </a> as submodule</p>
-<p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)"> https://en.wikipedia.org/wiki/Python_(programming_language) </a></p>
-<h4>Examples:</h4>
-<p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d"> https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d </a></p>
-<p style="padding-left: 30px;"><a href="https://www.geeksforgeeks.org/python-programming-examples/"> https://www.geeksforgeeks.org/python-programming-examples/ </a></p>
-<p style="padding-left: 30px;"><a href="https://www.programiz.com/python-programming/examples"> https://www.programiz.com/python-programming/examples </a></p>
-<p style="padding-left: 30px;"><a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/"> htt</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/382346258">模擬分析與實作</a></p>
+<p><a href="https://www.zhihu.com/zvideo/1389977173353267200">參考影片</a></p>
+<p><a href="https://www.youtube.com/results?search_query=PID%E9%8B%BC%E7%90%83%E5%B9%B3%E8%A1%A1">其他參考影片</a></p><h1>2d</h1>
+<p><img alt="" height="468" src="/images/cad2023_2d_ball_platform_balance_0.9_0.3m_PID_control.gif" width="470"/></p>
+<p><a href="http://229.cycu.org/ball_beam_balancing_PID_control_coppeliasim_1d_and_2d.7z">ball_beam_balancing_PID_control_coppeliasim_1d_and_2d.7z</a><span> </span>(<span>password required to download)</span></p>
+<p><span><a href="http://www.diva-portal.org/smash/get/diva2:1373784/FULLTEXT01.pdf">2019 Construction and theoretical study of a ball balancing platform.pdf</a> (<a href="http://229.cycu.org/2019%20Construction%20and%20theoretical%20study%20of%20a%20ball%20balancing%20platform.pdf">local download</a>, 需要密碼)</span></p>
+<p><span>其他參考資料查詢:</span></p>
+<p><span><a href="https://www.google.com/search?q=ball+balancing+platform+dynamics+equations+derivation">https://www.google.com/search?q=ball+balancing+platform+dynamics+equations+derivation</a></span></p>
+<p><span><a href="https://www.google.com/search?q=application+of+%22ball+balancing+platform+dynamics+system%22">https://www.google.com/search?q=application+of+"ball+balancing+platform+dynamics+system"</a></span></p><h1>Ref</h1>
+<p>PLM:</p>
+<p style="padding-left: 30px;"><a href="https://www.odoo.com/documentation/16.0/zh_TW/applications/inventory_and_mrp/plm.html">https://www.odoo.com/documentation/16.0/zh_TW/applications/inventory_and_mrp/plm.html</a></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-030-98578-3">PLM Volume 1 on link.springer.com</a></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-031-50658-1">PLM Volume 2 on link.springer.com</a></p>
+<p style="padding-left: 60px;"><a href="http://229.cycu.org/Product Lifecycle Management Vol 1.pdf">Product Lifecycle Management Vol 1.pdf</a></p>
+<p style="padding-left: 60px;"><a href="http://229.cycu.org/Product Lifecycle Management Vol 2.pdf">Product Lifecycle Management Vol 2.pdf</a></p>
+<p>Ball Balancing Control:</p>
+<p style="padding-left: 30px;">1D:</p>
+<p style="padding-left: 60px;"><a href="/downloads/Design and Implementation of Ball and Beam System Using PID Controller.pdf">Design and Implementation of Ball and Beam System Using PID Controller.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Modeling and Control of the Ball and Beam Process.pdf">Modeling and Control of the Ball and Beam Process.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Ball Beam PID Feedback Control.pdf">Ball Beam PID Feedback Control.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/A Robotic Ball Balancing Beam.pdf">A Robotic Ball Balancing Beam.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Ball Balancing Beam.pdf">Ball Balancing Beam.pdf</a></p>
+<p style="padding-left: 30px;">2D:</p>
+<p style="padding-left: 60px;"><a href="/downloads/Ball-Balancer.pdf">Ball-Balancer.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Ball Balancing Table Courseware Matlab.pdf">Ball Balancing Table Courseware Matlab.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Ball_on_the_plate_balancing_control_system.pdf">Ball_on_the_plate_balancing_control_system.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Offset-free MPC for a ball-balancing Stewart platform.pdf">Offset-free MPC for a ball-balancing Stewart platform.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/A Two-Degree-Of-Freedom Ball Balancing PID Controller.pdf">A Two-Degree-Of-Freedom Ball Balancing PID Controller.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Construction and Theoretical Study of a ball balancing platform.pdf">Construction and Theoretical Study of a ball balancing platform.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Control of a ball-and-plate system using a State-feedback controller.pdf">Control of a ball-and-plate system using a State-feedback controller.pdf</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/Functional observer-based feedback controller for ball balancing table.pdf">Functional observer-based feedback controller for ball balancing table.pdf</a></p>
+<p></p>
