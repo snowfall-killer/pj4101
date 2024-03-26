@@ -1,3 +1,9 @@
 [submodule "cmsimde"]
 	path = cmsimde
 	url = https://github.com/mdecycu/cmsimde.git
+[submodule "41023251"]
+	path = 41023251
+	url = https://github.com/sdegbsvrtg/41023251.git
+[submodule "cd2024"]
+	path = cd2024
+	url = https://github.com/scrum-2/cd2024.git
