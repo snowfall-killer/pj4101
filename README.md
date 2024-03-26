@@ -13,6 +13,7 @@ githubpage: http://mde.tw/pj4101
 
 download password: k***ab
 
+ODOO PLM Site: https://pj4101.odoo.com 
 <Hr>
 cmsimde template uses mdecycu/cmsimde as submodule
 
