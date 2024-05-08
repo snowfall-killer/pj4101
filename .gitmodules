@@ -7,3 +7,6 @@
 [submodule "cd2024"]
 	path = cd2024
 	url = https://github.com/scrum-2/cd2024.git
+[submodule "51"]
+	path = 51
+	url = https://github.com/sdegbsvrtg/pj4101.git
