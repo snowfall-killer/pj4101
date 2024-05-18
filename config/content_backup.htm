@@ -71,8 +71,50 @@
 <p><span>Odoo 產品生命週期管理(PLM)模組可以幫助企業對於產品的生命週期管理：從客戶需求→設計開發→產品測試→大量生產→產品維護→產品停產下架，PLM模組中可以為這個工作項目指派負責人員以及完成所需時間，負責這個項目的人員就可以對進度進行提交、修改，或是提出時間延長讓項目有更充裕的時間完成，每次項目提交都會以歷史紀錄保存，方便團隊追溯產品的修改紀錄。</span></p>
 <p><img alt="" height="266" src="/images/PLM_structure.png" width="400"/></p>
 <h2>Ch5_Implementation of ODOO PLM in Collaborative Design</h2>
-<p><span>ODOO PLM 在協同設計中的應用</span></p>
-<h2>Ch6_Case Study Design of Steel Ball Balancing Platform</h2>
+<p>第五章 <span>ODOO PLM </span>在協同設計中的應用</p>
+<p>  在這章節中我們將使用<span>1D</span>系統的鋼球平衡台來展示<span>ODOO</span>中產品生命週期<span>(PLM)</span>的功能，首先我們來到<span>ODOO</span>主介面並選取產品生命週期<span>(PLM)</span>。</p>
+<p><img alt="" height="325" src="/images/圖5.1.png" width="800"/></p>
+<p>圖<span>5.1</span></p>
+<p>進到這個頁面之後選擇主資料中的產品。</p>
+<p>圖<span>5.2</span></p>
+<p><img alt="" height="319" src="/images/圖5.2.png" width="800"/></p>
+<p> 接下來按下新增<span>(</span>圖<span>5.3)</span>進入到圖<span>5.4</span></p>
+<p><span><img alt="" height="62" src="/images/圖5.3.png" width="130"/></span></p>
+<p>圖<span>5.3</span></p>
+<p> <img alt="" height="338" src="/images/圖5.4.png" width="800"/></p>
+<p>圖<span>5.4</span></p>
+<p>我們以鋼球平衡台作為範例</p>
+<p><img alt="" height="463" src="/images/圖5.5.png" width="799"/></p>
+<p>圖<span>5.5</span></p>
+<p> 選擇物料清單來新增鋼球平衡台所需的零件。</p>
+<p><img alt="" height="113" src="/images/圖5.6.png" width="488"/></p>
+<p>圖<span>5.6</span></p>
+<p>將所需零件加入後，這些零組件會自動出現在剛才提到的產品中。</p>
+<p><img alt="" height="303" src="/images/圖5.7.png" width="800"/></p>
+<p>圖<span>5.7</span></p>
+<p>將產品設定完後回到主頁面並選取新產品介紹下方的工程變更。</p>
+<p><img alt="" height="320" src="/images/圖5.8.png" width="800"/></p>
+<p>圖<span>5.8</span></p>
+<p></p>
+<p> </p>
+<p>在這個頁面中我們選擇要製作的產品和物料清單，並且指派工作給各單位組員也可以設定完成期限或留下備註。</p>
+<p><img alt="" height="424" src="/images/圖5.9.png" width="800"/></p>
+<p>圖<span>5.9</span></p>
+<p>當我們設定完成後製作鋼球平衡台這項任務就會出現在頁面上。</p>
+<p><img alt="" height="149" src="/images/圖5.10.png" width="800"/></p>
+<p>圖<span>5.10</span></p>
+<p></p>
+<p> </p>
+<p>團隊中的主管可以藉由拖曳將圖塊任務移到相對應的狀態底下，假如專案已完成，主管可將圖塊移到已完成區域，這些狀態可依情形不同做修改或增加。</p>
+<p><img alt="" height="144" src="/images/圖5.11.png" width="800"/></p>
+<p>圖<span>5.11</span></p>
+<p>若想更改用料清單可以使用主頁面中用料清單<span>(BOM)</span>更新的功能，使用方法與建立新產品雷同此處就不多贅述。</p>
+<p><img alt="" height="341" src="/images/圖5.12.png" width="800"/></p>
+<p>圖<span>5.12</span></p>
+<p> <img alt="" height="471" src="/images/圖5.13.png" width="800"/></p>
+<p> 圖<span>5.13</span></p>
+<p></p>
+<p> </p><h2>Ch6_Case Study Design of Steel Ball Balancing Platform</h2>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <p>第六章 案例研究：鋼球平衡台的設計<br/>在鋼球平衡台中我們會用到兩種不同領域的理論，數學系統模型以牛頓力學推導運動方程式後使用拉氏傳換將時域轉變成頻域，而另外一項就是自動控制中常見的PID控制器。</p>
@@ -124,7 +166,7 @@
 <p>第一版本鋼球平衡台的<span>platform</span>軌道長度為<span>200mm</span>整體的寬度為<span>30mm </span>並給定深度填料<span>11mm </span></p>
 <p><img alt="" height="170" src="/images/6-1-11.png" width="437"/><img alt="" height="168" src="/images/6-1-12.png" width="95"/></p>
 <p>軌道上方寬度為<span>8.5mm</span>下方為<span>7.2mm</span>深<span>4mm</span>並將紅圈處深伸長除料選擇完全貫穿</p>
-<p></p>
+<p><img alt="" height="186" src="/images/6-1-13.png" width="436"/><img alt="" height="184" src="/images/6-1-14.png" width="95"/></p>
 <p></p>
 <p></p>
 <p></p><h3>Ch6-2</h3>
