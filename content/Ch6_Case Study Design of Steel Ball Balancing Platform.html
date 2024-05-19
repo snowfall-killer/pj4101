@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Control.html'>Control</a><li class='has-children'><a href='範例.html'>範例</a><ul class='dropdown'><li><a href='Report.html'>Report</a><li><a href='PLM.html'>PLM</a><li><a href='1d.html'>1d</a><li><a href='2d.html'>2d</a></li></ul><li class='has-children'><a href='CHAPTER.html'>CHAPTER</a><ul class='dropdown'><li><a href='Ch1_Introduction.html'>Ch1_Introduction</a><li><a href='Ch2_Background and Motivation.html'>Ch2_Background and Motivation</a><li><a href='Ch3_Overview of Collaborative Design.html'>Ch3_Overview of Collaborative Design</a><li><a href='Ch4_Introduction to ODOO PLM.html'>Ch4_Introduction to ODOO PLM</a><li><a href='Ch5_Implementation of ODOO PLM in Collaborative Design.html'>Ch5_Implementation of ODOO PLM in Collaborative Design</a><li class='has-children'><a href='Ch6_Case Study Design of Steel Ball Balancing Platform.html'>Ch6_Case Study Design of Steel Ball Balancing Platform</a><ul class='dropdown'><li><a href='Ch6-1.html'>Ch6-1</a><li><a href='platform.html'>platform</a><li><a href='Ch6-2.html'>Ch6-2</a><li><a href='Ch6-3.html'>Ch6-3</a></li></ul><li><a href='Ch7_Evaluation and Results.html'>Ch7_Evaluation and Results</a><li><a href='Ch8_Conclusion and Future Work.html'>Ch8_Conclusion and Future Work</a><li><a href='References.html'>References</a></li></ul><li><a href='Ref.html'>Ref</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Control.html'>Control</a><li class='has-children'><a href='範例.html'>範例</a><ul class='dropdown'><li><a href='Report.html'>Report</a><li><a href='PLM.html'>PLM</a><li><a href='1d.html'>1d</a><li><a href='2d.html'>2d</a></li></ul><li class='has-children'><a href='CHAPTER.html'>CHAPTER</a><ul class='dropdown'><li><a href='Ch1_Introduction.html'>Ch1_Introduction</a><li><a href='Ch2_Background and Motivation.html'>Ch2_Background and Motivation</a><li><a href='Ch3_Overview of Collaborative Design.html'>Ch3_Overview of Collaborative Design</a><li><a href='Ch4_Introduction to ODOO PLM.html'>Ch4_Introduction to ODOO PLM</a><li><a href='Ch5_Implementation of ODOO PLM in Collaborative Design.html'>Ch5_Implementation of ODOO PLM in Collaborative Design</a><li class='has-children'><a href='Ch6_Case Study Design of Steel Ball Balancing Platform.html'>Ch6_Case Study Design of Steel Ball Balancing Platform</a><ul class='dropdown'><li><a href='Ch6-1.html'>Ch6-1</a><li><a href='platform.html'>platform</a><li><a href='Ch6-2.html'>Ch6-2</a><li><a href='Ch6-3.html'>Ch6-3</a></li></ul><li><a href='Ch7_Evaluation and Results.html'>Ch7_Evaluation and Results</a><li><a href='Ch8_Conclusion and Future Work.html'>Ch8_Conclusion and Future Work</a><li><a href='References.html'>References</a></li></ul><li><a href='Ref.html'>Ref</a><li><a href='test page.html'>test page</a></li>
                       </ul>
                 </nav>
               </div>
@@ -156,13 +156,13 @@ img.add_border {
 <p>\begin{equation}<br/>\mathbf{a}_1= \left( \ddot{x_p} - x_p \dot{\alpha_1}^2 \right) \mathbf{e}_{i 1} + \left( x_p \ddot{\alpha_1} + 2 \dot{\alpha_1} \dot{x_p} \right) \mathbf{e}_{j 1}<br/>\end{equation}</p>
 <p>(6.3)<br/><img alt="" height="252" src="./../images/圖6-2.png" width="560"/> <br/> <br/>圖6-2</p>
 <p>在圖6-2的自由體圖中，從力矩的平衡可以看出球的剩餘力。<br/>\begin{equation}<br/>I_b \ddot{\beta}_1=F_{r 1} r<br/>\end{equation} (6.4)</p>
-<p>Ib是球的質量慣性矩，β₁是球相對於其初始位置在平台中心的角度，r是球的半徑，Fr是來自平台對球的作用力，我們假設求在平台上並無滑動所以我們可以根據位置定義相對角度β。<br/>\begin{equation}<br/>\beta_1=-\frac{x_p}{r}<br/>\end{equation} (6.5)</p>
+<p>\(I_b\)是球的質量慣性矩，\(\beta_1\)是球相對於其初始位置在平台中心的角度，\(r\)是球的半徑，\(F_r\)是來自平台對球的作用力，我們假設求在平台上並無滑動所以我們可以根據位置定義相對角度\(\beta\)。<br/>\begin{equation}<br/>\beta_1=-\frac{x_p}{r}<br/>\end{equation} (6.5)</p>
 <p>為了求解(6.4)中的Fr，我們將(6.5)式的二次時間導數代入(6.4)式中得到(6.6)式。<br/> <br/>\begin{equation}<br/>F_r=-\frac{I_b \ddot{x_p}}{r^2}<br/>\end{equation} (6.6)</p>
 <p>球在平台上受到的力和平台對球施加的力之間的平衡，由(6.3)式中的加速度和(6.6)中的力導致，由此的到動態系統的運動方程式。<br/>\begin{equation}<br/>\left(\frac{I_b}{r^2}+m_b\right) \ddot{x_p}+m_b g \sin \alpha_1-m_b x_p{\dot{\alpha_1}}^2=0<br/>\end{equation} (6.7)</p>
 <p>為了做拉式轉換我們稍微整理方程式。<br/>\begin{equation}<br/>\ddot{x}=\frac{m_b r_b^2\left(x_p \dot{\alpha}_1^2-g \sin \alpha_1\right)}{m_b r_b^2+I_b}<br/>\end{equation} (6.8)</p>
-<p>接下來我們在xp=0,α1=0對(6.8)式作線性化。</p>
+<p>接下來我們在\(X_p=0\),\(\alpha_1=0\)對(6.8)式作線性化。</p>
 <p>\begin{equation}<br/>\ddot{x}=\frac{m_b g \alpha_1 r^2}{m_b r_b{ }^2+I_b}<br/>\end{equation}(6.9)</p>
-<p>當α1出現小變動時線性化可得(6.9)式。<br/>接下來當我們將Ib也就是球體的質量慣性矩代入我們可以得到(6.10)，我們可以觀察到該系統的運動方程式和該球體的半徑和質量無關。</p>
+<p>當\(\alpha_1\)出現小變動時線性化可得(6.9)式。<br/>接下來當我們將Ib也就是球體的質量慣性矩代入我們可以得到(6.10)，我們可以觀察到該系統的運動方程式和該球體的半徑和質量無關。</p>
 <p>\begin{equation}<br/>\ddot{x}=\frac{5}{7} g \alpha_1<br/>\end{equation}(6.10)</p>
 <p>最後我們對(6.10)作拉式轉換得到(6.11)</p>
 <p>\begin{equation}<br/>s^2 X=\frac{5}{7} g A_1<br/>\end{equation}(6.11)</p>
