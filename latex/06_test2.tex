@@ -1,0 +1,93 @@
+\chapter{案例研究：鋼球平衡台的設計}
+在鋼球平衡台中我們會用到兩種不同領域的理論，數學系統模型以牛頓力學推導運動方程式後使用拉氏傳換將時域轉變成頻域，而另外一項就是自動控制中常見的PID控制器。
+
+\section{數學系統模型}
+球體的動態是由物理定律推導出，以微分方程式來表達，我們將使用牛頓力學來得到球的運動方程式，並使用拉氏轉換解之。
+
+\subsection{簡化與假設}
+為了得到球在平板上的運動方程式我們需假設球的幾何型態是完全球形且均質、球在平台上只在XY方向移動、球在平台上只做滾動無滑動並且不考慮摩擦力。
+
+\subsection{運動方程式}
+球的絕對加速度方程式由參考書籍[後期填入]得到。
+
+\begin{equation}
+\mathbf{a}_a=\dot{\omega} \times \mathbf{r}+\omega \times(\omega \times \mathbf{r})+2 \omega \times \mathbf{v}_{\text {rel }}+\mathbf{a}_{\text {rel }}
+\label{((6.1))}
+\end{equation} \\
+
+接下來我們將\ref{((6.1))}式改寫為\ref{(6.2)}，式中\(\mathbf{e}_{k1}\)和\(\mathbf{e}_{i1}\)代表單位向量，\(x_p\)代表球相對於座標系的位置，\(\alpha_1\)代表平台的傾角。
+
+\begin{equation}
+\mathbf{a}_1=\ddot{\alpha_1} \mathbf{e}_{k1} \times x_p \mathbf{e}_{i1}+\dot{\alpha_1} \mathbf{e}_{k1} \times\left(\dot{\alpha_1} \mathbf{e}_{k1} \times x_p \mathbf{e}_{i1}\right)+2 \dot{\alpha_1} \mathbf{e}_{k1} \times \dot{x_p} \mathbf{e}_{i1}+\ddot{x_p} \mathbf{e}_{i1}
+\label{(6.2)}
+\end{equation} \\
+
+將\ref{(6.2)}經過簡化整理後得到
+
+\begin{equation}
+\mathbf{a}_1= \left( \ddot{x_p} - x_p \dot{\alpha_1}^2 \right) \mathbf{e}_{i1} + \left( x_p \ddot{\alpha_1} + 2 \dot{\alpha_1} \dot{x_p} \right) \mathbf{e}_{j1}
+\label{(6.3)}
+\end{equation}\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{../images/圖6-2.png}
+\caption{圖6-2}
+\label{fig:6-2}
+\end{figure}
+
+在圖\ref{fig:6-2}的自由體圖中，從力矩的平衡可以看出球的剩餘力。
+
+\begin{equation}
+I_b \ddot{\beta}_1=F_{r1} r
+\label{(6.4)}
+\end{equation} \\
+
+\(I_b\)是球的質量慣性矩，\(\beta_1\)是球相對於其初始位置在平台中心的角度，\(r\)是球的半徑，\(F_r\)是來自平台對球的作用力，我們假設求在平台上並無滑動所以我們可以根據位置定義相對角度\(\beta\)。
+
+\begin{equation}
+\beta_1=-\frac{x_p}{r}
+\label{(6.5)}
+\end{equation} \\
+
+為了求解\ref{(6.4)}中的\(F_r\)，我們將\ref{(6.5)}式的二次時間導數代入\ref{(6.4)}式中得到\ref{(6.6)}式。
+
+\begin{equation}
+F_r=-\frac{I_b \ddot{x_p}}{r^2}
+\label{(6.6)}
+\end{equation} \\
+
+球在平台上受到的力和平台對球施加的力之間的平衡，由\ref{(6.3)}式中的加速度和\ref{(6.6)}中的力導致，由此得到動態系統的運動方程式。
+
+\begin{equation}
+\left(\frac{I_b}{r^2}+m_b\right) \ddot{x_p}+m_b g \sin \alpha_1-m_b x_p{\dot{\alpha_1}}^2=0
+\label{(6.7)}
+\end{equation} \\
+
+為了做拉式轉換我們稍微整理方程式。
+
+\begin{equation}
+\ddot{x}=\frac{m_b r_b^2\left(x_p \dot{\alpha}_1^2-g \sin \alpha_1\right)}{m_b r_b^2+I_b}
+\label{(6.8)}
+\end{equation} \\
+
+接下來我們在xp=0,α1=0對\ref{6.8}式作線性化。
+
+\begin{equation}
+\ddot{x}=\frac{m_b g \alpha_1 r^2}{m_b r_b{ }^2+I_b}
+\label{(6.9)}
+\end{equation}\\
+
+當\(\alpha_1\)出現小變動時線性化可得\ref{6.9}式。接下來當我們將\(I_b\)也就是球體的質量慣性矩代入我們可以得到\ref{(6.10)}，我們可以觀察到該系統的運動方程式和該球體的半徑和質量無關。
+
+\begin{equation}
+\ddot{x}=\frac{5}{7} g \alpha_1
+\label{(6.10)}
+\end{equation}\\
+
+最後我們對\ref{(6.10)}作拉式轉換得到\ref{(6.11)}
+
+\begin{equation}
+s^2 X=\frac{5}{7} g A_1
+\label{(6.11)}
+\end{equation}\\

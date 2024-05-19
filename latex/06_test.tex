@@ -12,26 +12,31 @@
 
 \begin{equation}
 \mathbf{a}_a=\dot{\omega} \times \mathbf{r}+\omega \times(\omega \times \mathbf{r})+2 \omega \times \mathbf{v}_{\text {rel }}+\mathbf{a}_{\text {rel }}
+\label{(6.1)}
 \end{equation} 
-(6.1)
 
-接下來我們將(6.1)式改寫為(6.2)，式中\(\mathbf{e}_{k 1}\)和\(\mathbf{e}_{i 1}\)代表單位向量，\(x_p\)代表球相對於座標系的位置，\({\alpha_1}\)代表平台的傾角。
+
+接下來我們將\ref{(6.1)}式改寫為\ref{(6.2)}，式中\(\mathbf{e}_{k 1}\)和\(\mathbf{e}_{i 1}\)代表單位向量，\(x_p\)代表球相對於座標系的位置，\({\alpha_1}\)代表平台的傾角。
 
 \begin{equation}
 \mathbf{a}_1=\ddot{\alpha_1} \mathbf{e}_{k 1} \times x_p \mathbf{e}_{i 1}+\dot{\alpha_1} \mathbf{e}_{k 1} \times\left(\dot{\alpha_1} \mathbf{e}_{k 1} \times x_p \mathbf{e}_{i 1}\right)+2 \dot{\alpha_1} \mathbf{e}_{k 1} \times \dot{x_p} \mathbf{e}_{i 1}+\ddot{x_p} \mathbf{e}_{i 1}
+\label{(6.2)}
 \end{equation} 
-(6.2)
+
+
 
 將(6.2)經過簡化整理後得到
 
 \begin{equation}
 \mathbf{a}_1= \left( \ddot{x_p} - x_p \dot{\alpha_1}^2 \right) \mathbf{e}_{i 1} + \left( x_p \ddot{\alpha_1} + 2 \dot{\alpha_1} \dot{x_p} \right) \mathbf{e}_{j 1}
+\label{(6.3)}
 \end{equation}
-(6.3)
+
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{../images/圖6-2.png}
+\label{圖6-2}
 \caption{圖6-2}
 \end{figure}
 
@@ -49,7 +54,7 @@ Ib是球的質量慣性矩，β₁是球相對於其初始位置在平台中心�
 \end{equation} 
 (6.5)
 
-為了求解(6.4)中的Fr，我們將(6.5)式的二次時間導數代入(6.4)式中得到(6.6)式。
+為了求解(6.4)中的\(F_r\)，我們將(6.5)式的二次時間導數代入(6.4)式中得到(6.6)式。
 
 \begin{equation}
 F_r=-\frac{I_b \ddot{x_p}}{r^2}
