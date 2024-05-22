@@ -146,7 +146,7 @@
 <p>我們在<span>1D</span>鋼球平衡台將會使用到<span>PID</span>控制器來控制球體。</p>
 <p>6.2.1 PID控制器</p>
 <p>   PID控制器是目前最廣泛使用的控制器，利用回授系統將訊號回傳就可以利用與設定點的偏差得到<span>e(t)</span>值，接下來我們將介紹<span>PID</span>中<span>P</span>、<span>I</span>、<span>D</span>是如何對系統產生影響。</p>
-<p>\begin{equation}\{u(t)=K_P e(t)+K_I \int_0^t e(\tau) d \tau+K_D \frac{d e(t)}{d t} \}\end{equation} (6.12)</p>
+<p>\begin{equation} u(t)=K_P e(t)+K_I \int_0^t e(\tau) d \tau+K_D \frac{d e(t)}{d t} \end{equation} (6.12)</p>
 <p>6.2.2 比例控制律<span>(K<sub>p</sub>)</span></p>
 <p>    在系統中加入<span>K<sub>p</sub></span>可以增快系統反應速度，但是有可能會造成系統響應阻尼比下降導致系統不穩定。</p>
 <p>\begin{equation}U_P(t)=K_P e(t)\end{equation}</p>
@@ -157,7 +157,7 @@
 <p> </p>
 <p>6.2.4 微分控制律<span>(K<sub>d</sub>)</span></p>
 <p>   對誤差在時域進行微分可以得到誤差隨時間改變的趨勢，能有效預測系統反應，來改善暫態響應增加系統問穩定性。</p>
-<p>\begin{equation} \{u(t)= K_D \frac{d e(t)}{d t}\} \end{equation}</p>
+<p>\begin{equation} u(t)= K_D \frac{d e(t)}{d t} \end{equation}</p>
 <p>(6.15)</p>
 <p></p>
 <p></p><h3>Ch6-1</h3>
