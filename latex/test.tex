@@ -1,0 +1,40 @@
+\documentclass[12pt]{report}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{BiauKai}  % 設定標楷體作為中文字體
+%\newfontfamily\sectionef{Times New Roman}%設定英文字體
+\usepackage[a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{titlesec}
+
+% 設定章節標題
+\titleformat{\chapter}[block]{\centering\bfseries\fontsize{20pt}{0}\selectfont}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{18pt}
+
+% 設定節標題
+\titleformat{\section}[hang]{\bfseries\fontsize{18pt}{0}\selectfont}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% 設定小節標題
+\titleformat{\subsection}[hang]{\bfseries\fontsize{16pt}{0}\selectfont}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{6pt}
+
+% 設定段落間距
+\setlength{\parskip}{12pt}
+
+% 設定行高
+\linespread{1.5}
+
+\begin{document}
+
+\chapter{章標題示例}
+這是一個章的內容示例。
+
+\section{節標題示例}
+這是一個節的內容示例。
+
+\subsection{小節標題示例}
+這是一個小節的內容示例。
+
+這是內文的示例。這段文字應該使用標楷體和 Times New Roman 字體，字體大小為 14 點，段落與後段距離設為 12 點(1 列)，左右對齊。
+
+\end{document}
