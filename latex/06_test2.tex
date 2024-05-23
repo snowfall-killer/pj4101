@@ -1,15 +1,13 @@
-\newpage
-\chapter{案例研究：鋼球平衡台的設計}	
+\chapter{案例研究：鋼球平衡台的設計}
+在鋼球平衡台中我們會用到兩種不同領域的理論，數學系統模型以牛頓力學推導運動方程式後使用拉氏傳換將時域轉變成頻域，而另外一項就是自動控制中常見的PID控制器。
 
-\section{概論}
-在鋼球平衡台中我們會用到兩種不同領域的理論，數學系統模型以牛頓力學推導運動方程式後使用拉氏傳換將時域轉變成頻域，而另外一項就是自動控制中常見的PID控制器。\\
-\subsection{數學系統模型}
+\section{數學系統模型}
 球體的動態是由物理定律推導出，以微分方程式來表達，我們將使用牛頓力學來得到球的運動方程式，並使用拉氏轉換解之。
 
-\subsubsection{簡化與假設}
+\subsection{簡化與假設}
 為了得到球在平板上的運動方程式我們需假設球的幾何型態是完全球形且均質、球在平台上只在XY方向移動、球在平台上只做滾動無滑動並且不考慮摩擦力。
 
-\subsubsection{運動方程式}
+\subsection{運動方程式}
 球的絕對加速度方程式由參考書籍[後期填入]得到。
 
 \begin{equation}
@@ -83,7 +81,7 @@ F_r=-\frac{I_b \ddot{x_p}}{r^2}
 當\(\alpha_1\)出現小變動時線性化可得\ref{6.9}式。接下來當我們將\(I_b\)也就是球體的質量慣性矩代入我們可以得到\ref{(6.10)}，我們可以觀察到該系統的運動方程式和該球體的半徑和質量無關。
 
 \begin{equation}
-\ddot{x}=\frac{5}{7} g \alpha_1	
+\ddot{x}=\frac{5}{7} g \alpha_1
 \label{(6.10)}
 \end{equation}\\
 
@@ -93,32 +91,3 @@ F_r=-\frac{I_b \ddot{x_p}}{r^2}
 s^2 X=\frac{5}{7} g A_1
 \label{(6.11)}
 \end{equation}\\
-
-\subsection{自動控制理論}
-我們在1D鋼球平衡台將會使用到PID控制器來控制球體。
-\subsubsection{PID控制器}
-PID控制器是目前最廣泛使用的控制器，利用回授系統將訊號回傳就可以利用與設定點的偏差得到\(e(t)\)值，接下來我們將介紹PID中P、I、D是如何對系統產生影響。\\
-\begin{equation}
-u(t) = K_p e(t) + K_I \int_0^t e(\tau) \, d\tau + K_D \frac{d e(t)}{d t}
-\label{(6.12)}
-\end{equation}\\
-\subsubsection{比例控制律(Kp)}
-在系統中加入\(K_p\)可以增快系統反應速度，但是有可能會造成系統響應阻尼比下降導致系統不穩定。\\
-\begin{equation}
-U_P(t)=K_P e(t)
-\label{(6.13)}
-\end{equation}\\
-\subsubsection{積分控制律(Ki)}
-\(K_i\)可以累計誤差，在系統反應初期作用不大，但經過一段時間的累積過後可以藉由先前累積的數據和設定值的平均誤差來讓系統穩定。\\
-\begin{equation}
-u(t)= K_I \int_0^t e(\tau) d \tau
-\label{(6.14)}
-\end{equation}\\
-\subsubsection{微分控制律(Kd)}
- 對誤差在時域進行微分可以得到誤差隨時間改變的趨勢，能有效預測系統反應，來改善暫態響應增加系統問穩定性。\\
- \begin{equation}
-u(t)= K_D \frac{d e(t)}{d t}
-\label{(6.15)}
-\end{equation}\\
- 
- 
