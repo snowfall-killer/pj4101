@@ -8,7 +8,6 @@
 % Windows 字型設定
 \setCJKmainfont{標楷體} %設定中文字體
 \newfontfamily\sectionef{Times New Roman}%設定英文字體
-%
 \usepackage{enumerate}
 \usepackage{amsmath,amssymb}%數學公式、符號
 \usepackage{amsfonts} %數學簍空的英文字
@@ -33,8 +32,8 @@ left=3truecm,right=2.5truecm]{geometry}
 \lstset{language=Python, %設定語言
 		basicstyle=\fontsize{14pt}{4pt}\selectfont, %設定程式內文字體大小
 		frame=lines,	%設定程式框架為線
-}%\usepackage{subcaption}%副圖標
-
+}
+%\usepackage{subcaption}%副圖標
 \graphicspath{{./../images/}} %圖片預設讀取路徑
 \usepackage{indentfirst} %設定開頭縮排模組
 \renewcommand{\figurename}{\Large 圖 } %更改圖片標題名稱
@@ -46,12 +45,9 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{appendix} %附錄
 \usepackage{diagbox}%引用表格
 \usepackage{multirow}%表格置中
-\usepackage{tasks}
-\usepackage{paralist}
-\usepackage{enumitem}
 %\usepackage{number line}
 %=------------------更改標題內容----------------------=%
-\titleformat{\chapter}[hang]{\center\sectionef\fontsize{20pt}{1pt}\bfseries}{第\CJKnumber{\thechapter}章}{1em}{}[]
+\titleformat{\chapter}[hang]{\center\sectionef\fontsize{20pt}{1pt}\bfseries}{\LARGE 第\CJKnumber{\thechapter}章}{1em}{}[]
 \titleformat{\section}[hang]{\sectionef\fontsize{18pt}{2.5pt}\bfseries}{{\thesection}}{0.5em}{}[]
 \titleformat{\subsection}[hang]{\sectionef\fontsize{16pt}{2.5pt}\bfseries}{{\thesubsection}}{1em}{}[]
 \titleformat{\subsubsection}[hang]{\sectionef\fontsize{14pt}{2.5pt}}{{\thesubsubsection}}{1em}{}[]
@@ -198,7 +194,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \input{061_CH6-1.tex}
 \input{07_CH7.tex}
 \input{08_CH8.tex}
-\input{item.tex}
+
 %\input{4_Design_and_Simulation_Environment.tex}
 %\input{5_Quadruped_robot_Design_Kinematic_Simulation.tex}
 %\input{6_FEM_of_Quadruped_robot.tex}
