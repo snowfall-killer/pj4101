@@ -147,15 +147,15 @@ img.add_border {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <p>第六章 案例研究：鋼球平衡台的設計<br/>在鋼球平衡台中我們會用到兩種不同領域的理論，數學系統模型以牛頓力學推導運動方程式後使用拉氏傳換將時域轉變成頻域，而另外一項就是自動控制中常見的PID控制器。</p>
 <p>6.1 數學系統模型<br/>球體的動態是由物理定律推導出，以微分方程式來表達，我們將使用牛頓力學來得到球的運動方程式，並使用拉氏轉換解之。</p>
-<p>6.1.1 簡化與假設<br/>為了得到球在平板上的運動方程式我們需假設球的幾何型態是完全球形且均質、球在平台上只在XY方向移動、球在平台上只做滾動無滑動並且不考慮摩擦力。</p>
+<p>6.1.1 簡化與假設<br/>為了得到球在平板上的運動方程式我們需假設球的幾何型態是完全球形且均質、球在平台上只在X方向移動、球在平台上只做滾動無滑動並且不考慮摩擦力。</p>
 <p>6.1.2 運動方程式<br/>球的絕對加速度方程式由參考書籍[後期填入]得到。</p>
 <p>\begin{equation}\mathbf{a}_a=\dot{\omega} \times \mathbf{r}+\omega \times(\omega \times \mathbf{r})+2 \omega \times \mathbf{v}_{\text {rel }}+\mathbf{a}_{\text {rel }}<br/>\end{equation} (6.1)</p>
 <p>接下來我們將(6.1)式改寫為(6.2)，式中\(\mathbf{e}_{k 1}\)和\(\mathbf{e}_{i 1}\)代表單位向量，\(x_p\)代表球相對於座標系的位置，\({\alpha_1}\)代表平台的傾角。</p>
 <p>\begin{equation}<br/>\mathbf{a}_1=\ddot{\alpha_1} \mathbf{e}_{k 1} \times x_p \mathbf{e}_{i 1}+\dot{\alpha_1} \mathbf{e}_{k 1} \times\left(\dot{\alpha_1} \mathbf{e}_{k 1} \times x_p \mathbf{e}_{i 1}\right)+2 \dot{\alpha_1} \mathbf{e}_{k 1} \times \dot{x_p} \mathbf{e}_{i 1}+\ddot{x_p} \mathbf{e}_{i 1}<br/>\end{equation} (6.2)</p>
 <p>將(6.2)經過簡化整理後得到</p>
 <p>\begin{equation}<br/>\mathbf{a}_1= \left( \ddot{x_p} - x_p \dot{\alpha_1}^2 \right) \mathbf{e}_{i 1} + \left( x_p \ddot{\alpha_1} + 2 \dot{\alpha_1} \dot{x_p} \right) \mathbf{e}_{j 1}<br/>\end{equation}</p>
-<p>(6.3)<br/><img alt="" height="252" src="./../images/圖6-2.png" width="560"/> <br/> <br/>圖6-2</p>
-<p>在圖6-2的自由體圖中，從力矩的平衡可以看出球的剩餘力。<br/>\begin{equation}<br/>I_b \ddot{\beta}_1=F_{r 1} r<br/>\end{equation} (6.4)</p>
+<p>(6.3)<br/><img alt="" height="335" src="./../images/圖6-1.png" width="744"/> 圖6-1</p>
+<p>在圖6-1的自由體圖中，從力矩的平衡可以看出球的剩餘力。<br/>\begin{equation}<br/>I_b \ddot{\beta}_1=F_{r 1} r<br/>\end{equation} (6.4)</p>
 <p>\(I_b\)是球的質量慣性矩，\(\beta_1\)是球相對於其初始位置在平台中心的角度，\(r\)是球的半徑，\(F_r\)是來自平台對球的作用力，我們假設求在平台上並無滑動所以我們可以根據位置定義相對角度\(\beta\)。<br/>\begin{equation}<br/>\beta_1=-\frac{x_p}{r}<br/>\end{equation} (6.5)</p>
 <p>為了求解(6.4)中的Fr，我們將(6.5)式的二次時間導數代入(6.4)式中得到(6.6)式。<br/> <br/>\begin{equation}<br/>F_r=-\frac{I_b \ddot{x_p}}{r^2}<br/>\end{equation} (6.6)</p>
 <p>球在平台上受到的力和平台對球施加的力之間的平衡，由(6.3)式中的加速度和(6.6)中的力導致，由此的到動態系統的運動方程式。<br/>\begin{equation}<br/>\left(\frac{I_b}{r^2}+m_b\right) \ddot{x_p}+m_b g \sin \alpha_1-m_b x_p{\dot{\alpha_1}}^2=0<br/>\end{equation} (6.7)</p>
@@ -168,6 +168,12 @@ img.add_border {
 <p>最後我們對(6.10)作拉式轉換得到(6.11)</p>
 <p>\begin{equation}<br/>s^2 X=\frac{5}{7} g A_1<br/>\end{equation}(6.11)</p>
 <p></p>
+<p>在推導運動運動方程式後我們得到了平台角度和球的關係式，接下來我們利用<span>geogebra</span>進行模擬得到馬達轉角和平台角度的關係圖利用擬合曲線來得到馬達轉角和平台的關係式<span>(</span>圖6-2<span>)</span>而超過正<span>70</span>度的部分由於桿件設計反而造成平台角度下降<span>(</span>由圖6-<span>3</span>可觀察到<span>)</span>，所以我們在最後程式設計的部分有將馬達角度限制，得到方程式後做線性化並拉式轉換就能利用這兩個關係式來獲得整體系統轉移函數。</p>
+<p><span>\begin{equation} \alpha = 0.233371 \theta - 0.293753 \end{equation}(6.12)</span></p>
+<p><img alt="" height="413" src="./../images/圖6-2.png" width="800"/></p>
+<p>圖6-2</p>
+<p><img alt="" height="529" src="./../images/圖6-3.png" width="800"/></p>
+<p>圖6-3</p>
 <p>6.2 自動控制理論</p>
 <p>我們在<span>1D</span>鋼球平衡台將會使用到<span>PID</span>控制器來控制球體。</p>
 <p>6.2.1 PID控制器</p>
