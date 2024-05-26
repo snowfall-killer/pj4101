@@ -153,10 +153,12 @@
 <p>最後我們對(6.10)作拉式轉換得到(6.11)</p>
 <p>\begin{equation}<br/>s^2 X=\frac{5}{7} g A_1<br/>\end{equation}(6.11)</p>
 <p></p>
-<p>在推導運動運動方程式後我們得到了平台角度和球的關係式，接下來我們利用<span>geogebra</span>進行模擬得到馬達轉角和平台角度的關係圖利用擬合曲線來得到馬達轉角和平台的關係式<span>(</span>圖6-2<span>)</span>而超過正<span>70</span>度的部分由於桿件設計反而造成平台角度下降<span>(</span>由圖6-<span>3</span>可觀察到<span>)</span>，所以我們在最後程式設計的部分有將馬達角度限制，得到方程式後做線性化並拉式轉換就能利用這兩個關係式來獲得整體系統轉移函數。</p>
-<p><span>\begin{equation} \alpha = 0.233371 \theta - 0.293753 \end{equation}(6.12)</span></p>
-<p><img alt="" height="413" src="/images/圖6-2.png" width="800"/></p>
+<p>在推導運動運動方程式後我們得到了平台角度和球的關係式，接 下來我們利用 geogebra 進行模擬得到馬達轉角和平台角度的關係圖 (圖6.2)。</p>
+<p><span></span><img alt="" height="413" src="/images/圖6-2.png" width="800"/></p>
 <p>圖6-2</p>
+<p>由 (圖6.2) 可觀察到，超過正 70 度的部分由於桿件設計反而造成平 台角度下降，故將該段行程捨棄，利用 python 生成擬合曲線 (圖6.3)，得 到馬達轉角和平台的關係式6.12。</p>
+<p><span>\begin{equation} \alpha = 0.233371 \theta - 0.293753 \end{equation}(6.12)</span></p>
+<p><span>得到方程式後做線性化並拉式轉換就能透過6.11和6.12獲得整體系 統轉移函數。</span></p>
 <p><img alt="" height="529" src="/images/圖6-3.png" width="800"/></p>
 <p>圖6-3</p>
 <p>6.2 自動控制理論</p>
@@ -177,8 +179,7 @@
 <p>\begin{equation} u(t)= K_D \frac{d e(t)}{d t} \end{equation}</p>
 <p>(6.15)</p>
 <p></p>
-<p></p>
-<h3>Ch6-1</h3>
+<p></p><h3>Ch6-1</h3>
 <p><span>1D 系統架構</span></p>
 <p>設計理念</p>
 <p><span>我們以鋼球平衡台作為專題的主體，然後寫程式驅動雷射測距感測器當鋼球遠離時platfor，當鋼球靠近時platform放下，重複此動作直至鋼球平衡台平衡。</span></p>
