@@ -1,9 +1,3 @@
-\newpage
-\section{控制系統設計與結果}
-最終的實體，我們選用Arduino UNO 作為開發板，VL53L0作為傳感器輸入，MG 996R伺服馬達進行輸出。
-\subsection{控制系統}
-Arduino板的控制程式如下:
-\begin{lstlisting}[language=C]
 #include <Wire.h>
 #include <VL53L0X.h>
 #include <Servo.h>
@@ -156,4 +150,3 @@ void loop() {
 
   delay(10);  // 延遲以匹配時間步長
 }
-\end{lstlisting}
