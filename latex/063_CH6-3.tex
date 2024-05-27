@@ -33,110 +33,120 @@ Arduino板的控制程式如下:
 
 \subsubsection{導入函式庫}
 \begin{lstlisting}[language=C]
-#include <Wire.h>       // 包含 I2C 通信的函式庫
-#include <VL53L0X.h>    // 包含 VL53L0X 距離感測器的函式庫
-#include <Servo.h>      // 包含控制伺服馬達的函式庫
+#include <Wire.h>
+#include <VL53L0X.h>
+#include <Servo.h>
+
+
 \end{lstlisting}
 
 \subsubsection{宣告物件和常數}
 \begin{lstlisting}[language=C]
 // 宣告物件
-VL53L0X sensor; // 宣告一個 VL53L0X 類別的物件，稱為 sensor
-Servo motor;    // 宣告一個 Servo 類別的物件，稱為 motor
+VL53L0X sensor;
+Servo motor;
 
 // PID 控制常數
-const float kp = 4.0;  // 比例增益
-const float ki = 2;    // 積分增益
-const float kd = 3.0;  // 微分增益
-const float tt = 1000; // 時間延遲常數，單位為毫秒
+const float kp = 38.2;  // 比例增益
+const float ki = 5;   // 積分增益
+const float kd = 31.6;   // 微分增益
+const float initial_delay = 500; // 初始延遲時間 (微秒)
 
-// 初始化誤差和積分項
-float error_sum = 0.0;         // 誤差積分項的初始值
-float last_error = 0.0;        // 上一次的誤差
-unsigned long last_time = 0;   // 上一次的時間
+
+\end{lstlisting}
+
+\subsubsection{設定指數平滑濾波器參數}
+\begin{lstlisting}[language=C]
+// 指數平滑濾波器參數
+const float alpha = 1;  // 平滑因子
+float filtered_distance = 0.0;  // 初始化過濾後的距離
+
 \end{lstlisting}
 
 \subsubsection{初始化設定}
 \begin{lstlisting}[language=C]
+
 void setup() {
-  // 設置串口通信速率
-  Serial.begin(115200);  // 設置串口通信速率為115200
-  Wire.begin();          // 初始化 I2C 通信
+  Serial.begin(115200);
+  Wire.begin();
   
-  // 初始化感測器
-  sensor.setTimeout(500);  // 設置感測器超時時間為500毫秒
-  if (!sensor.init()) {    // 初始化感測器，如果失敗則進入循環
+  sensor.setTimeout(500);
+  if (!sensor.init()) {
     Serial.println("Failed to detect and initialize sensor!");
-    while (1);  // 如果感測器初始化失敗，停止程式
+    while (1);
   }
-  sensor.startContinuous();  // 開始連續測量
+  sensor.startContinuous();
   
-  // 初始化伺服馬達
   motor.attach(9);  // 連接馬達到9號引腳
-  motor.write(90);  // 將馬達設置到90度，即中間位置
-  delay(tt);        // 延遲一段時間以確保馬達回到中間位置
+  motor.write(90);
+  delay(initial_delay); // 延遲以確保馬達回到中間位置
   
   last_time = micros();  // 初始化時間
 }
-\end{lstlisting}
 
-\subsubsection{獲取距離值}
-\begin{lstlisting}[language=C]
-float getDistance() {
-  float distance = sensor.readRangeContinuousMillimeters(); // 讀取距離，單位毫米
-  if (sensor.timeoutOccurred()) {
-    Serial.print("Timeout");  // 如果超時，輸出提示
-    return -1;  // 返回 -1 表示發生超時
-  } else {
-    // 限制距離範圍在35到300毫米之間
-    if (distance < 35) {
-      distance = 35;
-    } else if (distance > 300) {
-      distance = 300;
-    }
-    return distance;  // 返回有效的距離值
-  }
-}
 \end{lstlisting}
 
 \subsubsection{控制馬達}
 \begin{lstlisting}[language=C]
+float getDistance() {
+  float distance = sensor.readRangeContinuousMillimeters(); // 讀取距離，單位毫米
+  if (sensor.timeoutOccurred()) {
+    Serial.print("Timeout");
+    return -1;
+  } else {
+    distance = constrain(distance, 35, 300); // 將距離值約束在有效範圍內
+    return distance;
+  }
+}
+
+void resetControlVariables() {
+  error_sum = 0.0;
+  last_error = 0.0;
+}
+
 void controlMotor(float target_distance, float dt) {
-  float distance = getDistance();  // 獲取距離
-  if (distance > 0) {  // 如果距離值有效
-    // 輸出目標距離和實際距離
+  float distance = getDistance();
+  if (distance > 0) {
+    // 更新過濾後的距離
+    filtered_distance = alpha * distance + (1 - alpha) * filtered_distance;
+
+    // 檢測碰撞
+    if (distance <= 35 || distance >= 130) {
+      resetControlVariables();
+      Serial.println("Collision detected, resetting control variables.");
+      motor.write(90); // 重置馬達位置
+      return;
+    }
+
     Serial.print("Target: ");
     Serial.print(target_distance);
     Serial.print(" mm Distance: ");
-    Serial.print(distance);
+    Serial.print(filtered_distance);
 
     // 計算誤差
-    float error = target_distance - distance;
-    Serial.print(" Error: ");  // 輸出誤差
+    float error = target_distance - filtered_distance;
+    Serial.print(" Error: ");
     Serial.print(error);
 
     // 更新誤差總和
     error_sum += error * dt;
 
-    // 防止積分項積累過多
-    error_sum = constrain(error_sum, -100, 100);
+    // 防止積分項累積過多
+    error_sum = constrain(error_sum, -1000, 1000);
 
     // 計算微分項
-    float derivative = (error - last_error) / dt;
+    float derivative = (dt > 0) ? (error - last_error) / dt : 0;
 
     // 計算控制信號
-    float control_signal = kp * error + ki * error_sum + kd * derivative;
-    if (control_signal < 30) {  // 如果控制信號小於30，不使用積分項
-      control_signal = kp * error + kd * derivative;
-      Serial.print(" NO KI");
-    }
+    float control_signal = (kp * error + ki * error_sum + kd * derivative);
+
     // 將控制信號映射到有效的角度範圍內
-    int angle = constrain(map(control_signal, -1000, 1000, 180, 0), 0 , 180);
-    Serial.print(" Control_signal: ");  // 輸出控制信號
+    int angle = constrain(map(control_signal, -10000, 10000, 0, 180), 36 , 144);
+    Serial.print(" Control_signal: ");
     Serial.print(control_signal);
-    Serial.print(" angle: ");  // 輸出馬達角度
+    Serial.print(" Angle: ");
     Serial.println(angle);
-    motor.write(angle);  // 設置馬達角度
+    motor.write(angle);
 
     // 更新上一次的誤差
     last_error = error;
@@ -144,27 +154,25 @@ void controlMotor(float target_distance, float dt) {
 }
 \end{lstlisting}
 
-\subsubsection{主迴圈}
+\subsubsection{停止程式}
 \begin{lstlisting}[language=C]
 void loop() {
-  // 檢查是否有串口輸入
   if (Serial.available() > 0) {
-    char key = Serial.read();  // 讀取串口輸入
-    if (key == 'q') {  // 如果收到 'q' 指令
-      motor.detach();  // 停止馬達
-      while (1);  // 停止程式
+    char key = Serial.read();
+    if (key == 'q') {
+      // 停止馬達
+      motor.detach();
+      while (1);
     }
   }
 
-  // 計算時間差
-  unsigned long current_time = micros();  // 獲取當前時間（微秒）
-  float dt = (current_time - last_time) / 1000000.0; // 計算時間差，並將微秒轉換為秒
-  last_time = current_time;  // 更新上一次的時間
+  unsigned long current_time = micros();
+  float dt = (current_time - last_time) / 1000000.0; // 將微秒轉換為秒
+  last_time = current_time;
 
-  controlMotor(90, dt);  // 設定目標距離為 90 mm
+  controlMotor(90, dt);  // 設置目標距離為 90 mm
 
-  delay(100);  // 延遲以匹配時間步長 (dt)
+  delay(50);  // 延遲以匹配時間步長 (dt)
 }
-\end{lstlisting}
-
+  \end{lstlisting}
 
