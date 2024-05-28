@@ -8,6 +8,7 @@
 % Windows 字型設定
 \setCJKmainfont{標楷體} %設定中文字體
 \newfontfamily\sectionef{Times New Roman}%設定英文字體
+%
 \usepackage{enumerate}
 \usepackage{amsmath,amssymb}%數學公式、符號
 \usepackage{amsfonts} %數學簍空的英文字
@@ -46,6 +47,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{diagbox}%引用表格
 \usepackage{multirow}%表格置中
 %\usepackage{number line}
+\usepackage{hanging}
 %=------------------更改標題內容----------------------=%
 \titleformat{\chapter}[hang]{\center\sectionef\fontsize{20pt}{1pt}\bfseries}{\LARGE 第\CJKnumber{\thechapter}章}{1em}{}[]
 \titleformat{\section}[hang]{\sectionef\fontsize{18pt}{2.5pt}\bfseries}{{\thesection}}{0.5em}{}[]
@@ -162,6 +164,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \end{flushleft}
 \newpage
 %=------------------------目錄----------------------=%
+\addcontentsline{toc}{chapter}{目錄}
 \renewcommand{\contentsname}{\centerline{\fontsize{18pt}{\baselineskip}\selectfont\textbf{目\quad 錄}}}
 \tableofcontents　　%目錄產生
 \newpage
@@ -209,7 +212,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \input{11_appendix.tex}
 \newpage
 %=-------------作者簡介-----------------=%
-    \addcontentsline{toc}{chapter}{作者簡介}
+ \addcontentsline{toc}{chapter}{作者簡介}
     \begin{center}
 	\fontsize{20pt}{0em}\selectfont \bf{作者簡介}\\
 	\end{center}	
@@ -220,45 +223,43 @@ left=3truecm,right=2.5truecm]{geometry}
 	\end{textblock}}
 	{\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
 	{\begin{textblock}{15}(3.5,0.7)%{寬度}(以左上角為原點之右移量,下移量)
-	\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace
-    \fontsize{14pt}{0em}\selectfont \makebox[4em][s]{陳岳檉}\\     \hspace*{\fill} \\
-    \fontsize{14pt}{0em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
-    \fontsize{14pt}{0em}\selectfont \makebox[4em][s]{41023218} \\ %\makebox為文本盒子
+	\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace
+    \fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{陳岳檉}\\     \hspace*{\fill} \\
+    \fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
+    \fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{41023218} \\ %\makebox為文本盒子
     \hspace*{\fill} \\
-    \fontsize{14pt}{0em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
-    \fontsize{14pt}{0em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
+    \fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
+    \fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
     \hspace*{\fill} \\
-    \fontsize{14pt}{0em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
-    \fontsize{14pt}{0em}\selectfont \makebox[9em][s]{台中市致用高級中學}\\
-    \fontsize{14pt}{0em}\selectfont \makebox[4em][s]{\quad}\enspace\enspace
-    \fontsize{14pt}{0em}\selectfont \makebox[8em][s]{機械科}\\
+    \fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
+    \fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{台中市致用高級中學~機械科}\\
+   
     \end{textblock}}}
    % \hspace*{\fill} \\
-   \vspace{2em}
+   \vspace{4em}
 	{\begin{textblock}{6}(0,2.3)
 	\begin{figure}
-	\includegraphics[width=1.15in]{48}
+	\includegraphics[width=1.15in]{48} 
     \end{figure}
     \end{textblock}}
     {\renewcommand\baselinestretch{0.99}
     \selectfont %設定以下行距
     {\begin{textblock}{15}(3.5,2.5) %{寬度}(以左上角為原點之右移量,下移量)
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{蔡弦霖}\\ 
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace
+\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{蔡弦霖}\\ 
 \hspace*{\fill} \\
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{41023248} \\ 
+\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{41023248} \\ 
 \hspace*{\fill} \\
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
+\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
+\fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
 \hspace*{\fill} \\
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[9em][s]{國立台南高級工業職業學校}\\
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{\quad}\enspace\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[8em][s]{機械科}\\
+\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
+\fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{國立台南高級工業職業學校~機械科}\\
+
     \end{textblock}}}
     %\hspace*{\fill} \\
-    \vspace{2em}
+    \vspace{4em}
     {\begin{textblock}{6}(0,4.1)
     \begin{figure}
         \includegraphics[width=1.15in]{51} %{}內是圖片文件的相對路徑
@@ -266,20 +267,20 @@ left=3truecm,right=2.5truecm]{geometry}
     \end{textblock}}
     {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
     {\begin{textblock}{15}(3.5,4.3) %{寬度}(以左上角為原點之右移量,下移量)
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace%\noindent指定首行不進行縮排
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{鄭立揚}\\ 
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace%\noindent指定首行不進行縮排
+\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{鄭立揚}\\ 
 \hspace*{\fill} \\
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{41023251} \\ %\makebox為文本盒子
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{41023251} \\ %\makebox為文本盒子
 \hspace*{\fill} \\
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
 \hspace*{\fill} \\
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[9em][s]{台南市黎明高級中學}\\
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
+\fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{台南市黎明高級中學}\\
     \end{textblock}}}
    % \hspace*{\fill} \\
-   \vspace{2em}
+   \vspace{4em}
     {\begin{textblock}{6}(0,5.9)
     \begin{figure}
         \includegraphics[width=1.15in]{54} %{}內是圖片文件的相對路徑
@@ -287,27 +288,30 @@ left=3truecm,right=2.5truecm]{geometry}
     \end{textblock}}
     {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
     {\begin{textblock}{15}(3.5,6.1) %{寬度}(以左上角為原點之右移量,下移量)
-\noindent\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{謝鴻元}\\ \hspace*{\fill} \\
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{41023254} \\ \hspace*{\fill} \\
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
+\noindent\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{姓名}\enspace:\enspace
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{謝鴻元}\\ \hspace*{\fill} \\
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{學號}\enspace:\enspace
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{41023254} \\ \hspace*{\fill} \\
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{就讀學校}\enspace:\enspace
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[9em][s]{國立虎尾科技大學~機械設計工程系}\\
 \hspace*{\fill} \\
-\noindent\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[9em][s]{國立台北科技大學附屬桃園農工高級中等學校}\\
-\fontsize{14pt}{0em}\selectfont \makebox[4em][s]{\quad}\enspace\enspace
-\fontsize{14pt}{0em}\selectfont \makebox[8em][s]{動力科}\\
+\noindent\fontsize{14pt}{0.5em}\selectfont \makebox[4em][s]{經歷}\enspace:\enspace
+\fontsize{12pt}{0.5em}\selectfont \makebox[9em][s]{國立台北科技大學附屬桃園農工高級中等學校~動力科}\\
+
+
     \end{textblock}}}
 \newpage
+
+
+
 
 %=----------------書背----------------------=%
 \pagestyle{empty}%設定沒有頁眉和頁腳
 \begin{center}
 \fontsize{0.001pt}{1pt}\selectfont .\\
 \vspace{2em}
-\fontsize{30pt}{30pt}\selectfont 【05】 \\
-\fontsize{20pt}{20pt}\selectfont
+\fontsize{14pt}{30pt}\selectfont 【18】 \\
+\fontsize{14pt}{20pt}\selectfont
 \vspace{0.1em}
 分\\
 類\\
@@ -316,23 +320,34 @@ left=3truecm,right=2.5truecm]{geometry}
 \vspace{0.1em}
 \hspace{-0.5em}：\\
 \vspace{0.1em}
-\rotatebox[origin=cc]{270}{\sectionef\LARGE \textbf{112-4-CAE-3006、3004-1}}\\ %旋轉
+\rotatebox[origin=cc]{270}{\sectionef\LARGE \textbf{113-4-APP-3004-1}}\\ %旋轉
 \vspace{0.1em}
-有\\
-限\\
-元\\
-素\\
-法\\
+O\\
+D\\
+O\\
+O\\
+P\\
+L\\
+M\\
 在\\
-四\\
-足\\
-機\\
-器\\
-人\\
+協\\
+同\\
+設\\
+計\\
 上\\
 的\\
 應\\
 用\\
+以\\
+鋼\\
+球\\
+平\\
+衡\\
+台\\
+設\\
+計\\
+為\\
+例\\
 \vspace{1em}
 一\\
 \vspace{0.1em}
@@ -342,7 +357,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \vspace{0.1em}
 十\\
 \vspace{0.1em}
-三\\
+四\\
 \vspace{0.1em}
 級\\
 
@@ -355,4 +370,5 @@ left=3truecm,right=2.5truecm]{geometry}
 %\rotatebox[origin=cc]{90}{\LARGE 【14】}\rotatebox[origin=cc]%{180}{\LARGE 1-2-APP-8765} %旋轉
 %\end{center}
 %\end{landscape}
+
 \end{document}
