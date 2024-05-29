@@ -9,20 +9,13 @@
 
 %\begin{flushleft}
 \justifying
-\fontsize{14pt}{20pt}\sectionef\hspace{12pt}\quad 本專題旨在探討 ODOO PLM 在協同設計工程中的應用，並以鋼球平衡台設計為實例進行展示。\\[14pt]
-
-\fontsize{14pt}{20pt}\sectionef\hspace{12pt}\quad 設計流程首先使用Solvespace、Onshape與Solidworks等CAD軟體分別繪製鋼球平衡台的零件，以作為 ODOO PLM 在協同工程中的應用範例，並將組立檔案導入CoppeliaSim虛擬環境中進行動態模擬。在模擬環境中，我們利用虛擬紅外線感測器測量1D平台上鋼球的實時位置，並將此位置訊號作為PID控制系統的回授控制依據。\\
+\fontsize{14pt}{20pt}\sectionef\hspace{12pt}\quad 本專題旨在探討 ODOO PLM 在協同設計工程中的應用，並以鋼球平衡台設計為實例進行展示。設計流程首先使用Solvespace、Onshape與Solidworks等CAD軟體分別繪製鋼球平衡台的零件，以作為 ODOO PLM 在協同工程中的應用範例，並將組立檔案導入CoppeliaSim虛擬環境中進行動態模擬。在模擬環境中，我們利用虛擬紅外線感測器測量1D平台上鋼球的實時位置，並將此位置訊號作為PID控制系統的回授控制依據。\\
 
 \fontsize{14pt}{20pt}\sectionef\hspace{12pt}\quad 機構設計部分則採用Geogebra軟體進行分析。整個專題的協同製作過程使用ODOO與Github進行管理。虛擬PID控制系統採用Python語言搭配ZeroMQ遠端API實作，而實體控制則結合Arduino開發板與虛擬場景取得的鋼球位置感測資訊執行PID控制。\\
 
 \fontsize{14pt}{20pt}\sectionef\hspace{12pt}\quad 最後，專題報告的撰寫分別在使用者電腦上採MikTeX與Github遠端上的Github Actions進行整合，立用LaTeX協同編輯並自動生成PDF檔案。透過將虛擬與實體系統緊密結合，本專題有效展現ODOO PLM於協同產品生命週期管理的應用潛力。\\
 
 %\end{flushleft}
-
-
-
-\vspace{7cm}
-
 
 \begin{hangparas}{1.5cm}{1}
 \fontsize{14pt}{20pt}\sectionef
@@ -36,16 +29,13 @@
 \LARGE\textbf\sectionef{Abstract}\\
 \end{center}
 
-\justifying\fontsize{14pt}{16pt}\sectionef\hspace{12pt}\quad This project aims to explore the application of ODOO PLM in collaborative engineering design, using the design of a ball balancing table as an example.
-\\[12pt]
-
-\justifying\fontsize{14pt}{16pt}\sectionef\hspace{12pt}\quad The design process began by using CAD software such as Solvespace, Onshape, and Solidworks to individually model the components of the ball balancing table, serving as an example application of ODOO PLM in collaborative engineering. The assembled files were then imported into the CoppeliaSim virtual environment for dynamic simulations. In the simulated environment, we utilized virtual infrared sensors to measure the real-time position of the ball on the platform, and this position signal was used as the feedback for the PID control system. \\
+\justifying\fontsize{14pt}{16pt}\sectionef\hspace{12pt}\quad This project aims to explore the application of ODOO PLM in collaborative engineering design, using the design of a ball balancing table as an example. The design process began by using CAD software such as Solvespace, Onshape, and Solidworks to individually model the components of the ball balancing table, serving as an example application of ODOO PLM in collaborative engineering. The assembled files were then imported into the CoppeliaSim virtual environment for dynamic simulations. In the simulated environment, we utilized virtual infrared sensors to measure the real-time position of the ball on the platform, and this position signal was used as the feedback for the PID control system.\\
 
 \justifying\fontsize{14pt}{16pt}\sectionef\hspace{12pt}\quad The mechanism design was analyzed using the Geogebra software. The collaborative work process of this project was managed using ODOO and Github. The virtual PID control system was implemented using Python language with the ZeroMQ remote API, while the physical control was integrated with an Arduino board and the ball position sensing information obtained from the virtual scene to execute PID control.\\
 
 \justifying\fontsize{14pt}{16pt}\sectionef\hspace{12pt}\quad Finally, the project report was collaboratively edited using LaTeX, with MiKTeX used locally and Github Actions on Github for automatic PDF generation. By closely integrating the virtual and physical systems, this project effectively demonstrated the potential of ODOO PLM in collaborative product lifecycle management.\\
 
-\vspace{6cm}
+\vspace{3cm}
 \begin{hangparas}{1.5cm}{1}
 Keywords: Product Lifecycle Management, PID Control, Collaborative Design, CoppeliaSim , Github
 \end{hangparas}
